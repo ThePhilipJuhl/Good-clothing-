@@ -4,16 +4,52 @@
     /* === colors  === */
     --color-bg-main: #FFFCF2;
     --color-bg-accent: #e9e3d7;
+
     --color-main: #6C7587;
     --color-accent: #58606D; 
 
     --color-text-main: #2E2E2E;
-    --color-text-gray: #6C7587;
+    --color-text-medium: #6C7587;
+    --color-text-light: lightgray;
+
+    --color-border: gray;
+    --color-border-light: lightgray;
 
 
     /* === fonts === */
     --font-main: 'Poppins', sans-serif;
     --font-title: 'inter', sans-serif;
 
-    /* ===  === */
+    /* === font size === */
+
+    /* === gap === */
+    --gap-xs: #;
+    --gap-s: #;
+    --gap-m: #;
+    --gap-l: #;
+    --gap-xl: #;
+
+
+    /* === padding === */
+    --padding-xs: #;
+    --padding-s: #;
+    --padding-m: #;
+    --padding-l: #;
+    --padding-xl: #;
+
+
+    /* === margin === */
+    --margin-xs: #;
+    --margin-s: #;
+    --margin-m: #;
+    --margin-l: #;
+    --margin-xl: #;
+
+
+    /* === border === */
+    --border: 1px solid var(--color-border);
+    --border-light: 1px solid var(--color-border-light);
 }
+
+
+/* padding: clamp(1em, 1vw, 3vw) clamp(2em, 2vw, 4vw) */
