@@ -10,6 +10,14 @@ h1, h2, h3, h4{
     color: var(--color-text-main);
 }
 
+h1 {
+    font-size: var(--h1-size);
+}
+
+h2 {
+    font-size: var(--h2-size);
+}
+
 p{
     font-family: var(--font-main);
     color: var(--color-text-medium);
@@ -19,3 +27,5 @@ p{
 body{
     background-color: var(--color-bg-main);
 }
+
+
