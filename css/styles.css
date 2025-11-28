@@ -5,7 +5,17 @@
     box-sizing: border-box;
 }
 
-h1{
+h1, h2, h3, h4{
     font-family: var(--font-title);
     color: var(--color-text-main);
+}
+
+p{
+    font-family: var(--font-main);
+    color: var(--color-text-medium);
+    font-size: var(--p-size);
+}
+
+body{
+    background-color: var(--color-bg-main);
 }
