@@ -15,7 +15,7 @@
     --color-border: gray;
     --color-border-light: lightgray;
 
-    --color-link-active: blue;
+
     --color-link-hover: blue;
 
     /* === fonts === */
@@ -25,6 +25,7 @@
     /* === font size === */
     --h1-size: clamp(2.2rem, 4vw, 4rem);
     --h2-size: clamp(1.8rem, 3vw, 3rem);
+    --p-m-size: clamp(1.2rem, 1.4vw, 1.6rem);
     --p-size: clamp(1rem, 1.2vw, 1.25rem);
     --p-s-size: clamp(0.875rem, 1vw, 1rem);
 

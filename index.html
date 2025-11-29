@@ -9,30 +9,52 @@
     
 </head>
 <body>
-    <nav>
+    <nav id="desktop-menu">
         <ul>
-            <a href="#"><li>logo</li></a>
-            <a href="#"><li>hello</li></a>
-            <a href="#"><li>hello</li></a>
-            <a href="#"><li>hello</li></a>
-            <a href="#"><li>shoppingcart</li></a>
+            <li><a href="#">Logo</a></li>
+            <li class="nav-links hidden"><a href="#">Products</a></li>
+            <li class="nav-links hidden"><a href="#">Login</a></li>
+            <li class="nav-links hidden"><a href="#">Signup</a></li>
+            <li>
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+            </li>
+        </ul>
+
+        <ul class="shopping-cart">
+            <li><a href="#">
+                <span class="nav-links hidden">Shopping cart</span><i class="fa-solid fa-cart-shopping"></i>
+            </a></li>
+        </ul>
+    </nav>
+    <nav id="mobile-burger-menu">
+        <ul>
+            <li id="close-menu">
+                <a href="#"><i class="fa-solid fa-xmark"></i></a>
+            </li>
+            <li><a href="#">Logo</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Signup</a></li>
+            <li><a href="#">
+                <i class="fa-solid fa-cart-shopping"></i><span>Shopping cart</span>
+            </a></li>
         </ul>
     </nav>
     
     <footer>
         <div class="footer-content">
+            <ul>
+                <li><a class="footer-logo" href="#">Logo</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Signup</a></li>
+            </ul>
             <div class="footer-icons">
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-square-facebook"></i>
                 <i class="fa-brands fa-youtube"></i>
                 <i class="fa-brands fa-linkedin"></i>
             </div>
-            <ul>
-                <a class="footer-logo" href="#"><li>Logo</li></a>
-                <a href="#"><li>Products</li></a>
-                <a href="#"><li>Login</li></a>
-                <a href="#"><li>Signup</li></a>
-            </ul>
         </div>
         <p>&copy; 2025 Good Clothing</p>
     </footer>

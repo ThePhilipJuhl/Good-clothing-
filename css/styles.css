@@ -24,9 +24,57 @@ p{
     font-size: var(--p-size);
 }
 
+a {
+    font-family: var(--font-main);
+}
+
 body{
     background-color: var(--color-bg-main);
 }
+
+nav  {
+    padding: var(--padding-m);
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: var(--gap-m);
+
+        .hidden { display: none;}
+
+        a {
+            text-decoration: none;
+            color: var(--color-text-main);
+        }
+    }
+
+    @media (min-width: 700px){
+        ul {
+            .hidden { display: block;}
+            .fa-bars { display: none;}
+        }
+
+         > .shopping-cart{
+            a {
+                display: flex;
+                gap: var(--gap-m);
+                align-items: center;
+            }
+        }   
+    }
+
+}
+
+ #mobile-burger-menu {
+    display: none;
+    > ul{
+        display: flex;
+        flex-direction: column;
+    }
+ }
+ 
 
 footer {
     border-top: var(--border-light);
@@ -40,8 +88,8 @@ footer {
     text-align: center;
 
     ul {
+
         list-style: none;
-        margin-top: var(--gap-m);
 
         a{
             font-family: var(--font-main);
@@ -63,9 +111,12 @@ footer {
     .footer-icons {
         display: flex;
         gap: var(--gap-m);
+        margin-top: var(--gap-m);
 
        .fa-brands{
         font-size: var(--icon-m);
+        margin: var(--margin-xs);
+        color: var(--color-text-main);
        }
     }
 
@@ -74,8 +125,11 @@ footer {
             display: flex;
             justify-content: space-between;
             width: 100%;
+    
             ul {
-                text-align: right;
+                display: flex;
+                gap: var(--gap-s);
+                margin-top: var(--gap-m);
             }
         }
     }
