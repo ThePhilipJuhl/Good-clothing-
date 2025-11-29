@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: var(--color-bg-main);
+}
+
+/* === headers, text and links === */
 h1, h2, h3, h4{
     font-family: var(--font-title);
     color: var(--color-text-main);
@@ -26,12 +31,11 @@ p{
 
 a {
     font-family: var(--font-main);
+    font-size: var(--p-size);
 }
 
-body{
-    background-color: var(--color-bg-main);
-}
 
+/* === nav === */
 nav  {
     padding: var(--padding-m);
     display: flex;
@@ -67,15 +71,25 @@ nav  {
 
 }
 
- #mobile-burger-menu {
+ #mobile-menu {
     display: none;
     > ul{
         display: flex;
         flex-direction: column;
     }
  }
+
+#mobile-menu.active {
+    display: block;
+}
+
+#desktop-menu.hidden {
+    display: none;
+}
+
  
 
+/* === footer === */
 footer {
     border-top: var(--border-light);
     margin: var(--margin-m);
