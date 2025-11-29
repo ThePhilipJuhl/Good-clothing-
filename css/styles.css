@@ -28,4 +28,55 @@ body{
     background-color: var(--color-bg-main);
 }
 
+footer {
+    border-top: var(--border-light);
+    margin: var(--margin-m);
+    padding: var(--padding-m);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-m);
+    text-align: center;
 
+    ul {
+        list-style: none;
+        margin-top: var(--gap-m);
+
+        a{
+            font-family: var(--font-main);
+            color: var(--color-text-medium);
+            font-size: var(--p-size);
+        
+            &:hover {
+                color: var(--color-link-hover);
+                font-weight: var(--font-weight-bold);
+            }
+        }
+
+        .footer-logo{
+            text-decoration: none;
+            font-weight: var(--font-weight-bold);
+        }
+    }
+
+    .footer-icons {
+        display: flex;
+        gap: var(--gap-m);
+
+       .fa-brands{
+        font-size: var(--icon-m);
+       }
+    }
+
+    @media (min-width: 700px){
+        .footer-content{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            ul {
+                text-align: right;
+            }
+        }
+    }
+}
