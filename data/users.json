@@ -38,6 +38,11 @@
       "firstName": "sofie",
       "lastName": "sofie",
       "password": "123"
+    },
+    {
+      "id": "4264",
+      "email": "sofie@gmail.com",
+      "password": "12345"
     }
   ]
 }

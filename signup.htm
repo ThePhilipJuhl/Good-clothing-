@@ -6,6 +6,7 @@
     <title>Good clothing</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/script.js" type="module"></script>
     <script src="js/signup.js" type="module"></script>
 </head>
 <body>
@@ -62,11 +63,11 @@
             </div>
             <div>
                 <label for="password">Password</label>
-                <input type="password" id="password" pattern="^[\S]{6,225}$" name="password">
+                <input type="password" id="password" pattern="^[\S]{6,225}$" name="password" required>
             </div>
             <div>
                 <label for="repeatPassword">Repeat password</label>
-                <input type="password" id="repeatPassword" pattern="^[\S]{6,255}$" name="repeatPassword">
+                <input type="password" id="repeatPassword" pattern="^[\S]{6,255}$" name="repeatPassword" required>
             </div>
             <div>
                 <button type="submit">Sign up here</button>

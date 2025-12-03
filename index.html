@@ -7,13 +7,19 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="js/script.js" type="module"></script>
+    <script src="js/loginCheck.js" type="module"></script>
+    <script src="js/logout.js" type="module"></script>
 </head>
 <body>
-    <nav id="desktop-menu">
+    <nav id="main-menu" class="main-menu">
         <ul>
             <li><a href="index.html">Logo</a></li>
             <li class="nav-links hidden"><a href="#">Products</a></li>
-            <li class="nav-links hidden"><a href="login.htm">Login</a></li>
+
+            <!--adding login/logout id to render different li elements-->
+            <li id="login" class="nav-links"><a href="login.htm">Login</a></li>
+            <li id="logout" class="nav-links hidden"><button id="btnLogout">Logout</button></li>            
+
             <li class="nav-links hidden"><a href="signup.htm">Signup</a></li>
             <li id="open-nav">
                 <a href="#"><i class="fa-solid fa-bars"></i></a>
@@ -22,11 +28,12 @@
 
         <ul class="shopping-cart">
             <li><a href="#">
-                <span class="nav-links hidden">Shopping cart</span><i class="fa-solid fa-cart-shopping"></i>
+                <p class="nav-links hidden">Shopping cart</p><i class="fa-solid fa-cart-shopping"></i>
             </a></li>
         </ul>
     </nav>
-    <nav id="mobile-menu">
+    <p id="user"></p>
+    <!-- <nav id="burger-menu">
         <ul>
             <li id="close-nav">
                 <a href="#"><i class="fa-solid fa-xmark"></i></a>
@@ -39,7 +46,7 @@
                 <i class="fa-solid fa-cart-shopping"></i><span>Shopping cart</span>
             </a></li>
         </ul>
-    </nav>
+    </nav> -->
     
     <footer>
         <div class="footer-content">

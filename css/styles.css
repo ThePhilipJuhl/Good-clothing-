@@ -37,6 +37,12 @@ a {
 body{
     font-family: var(--font-main);
 }
+/* === responsive classes === */
+.hidden { display: none; }
+.visible { display: block; }
+
+.auth-hidden { display: none; }
+.auth-visible { display: block; }
 
 /* === modal === */
 #modal{
@@ -49,58 +55,54 @@ body{
 }
 
 /* === nav === */
-nav  {
-    padding: var(--padding-m);
+nav#main-menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: var(--margin-s);
+
+    a {
+        text-decoration: none;
+        color: var(--color-text-main)
+    }
 
     ul {
         list-style: none;
         display: flex;
-        gap: var(--gap-m);
-
-        .hidden { display: none;}
+        gap: var(--gap-s);
 
         a {
-            text-decoration: none;
-            color: var(--color-text-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--gap-s);
+        }
+
+        #open-nav{
+            margin-top: var(--margin-xs);
         }
     }
 
-    @media (min-width: 700px){
-        ul {
-            .hidden { display: block;}
-            .fa-bars { display: none;}
+    /* hide login and logout on mobile screen */
+    #login, #logout {
+        display: none;
+    }
+
+    @media (min-width: 500px){
+        
+        /*show the li elements on larger screens*/
+        .nav-links, #login{
+            display: block;
         }
 
-         > .shopping-cart{
-            a {
-                display: flex;
-                gap: var(--gap-m);
-                align-items: center;
-            }
-        }   
+        /*hide the burger icon*/
+        #open-nav{
+            display: none;
+        }
+
     }
-
 }
 
- #mobile-menu {
-    display: none;
-    > ul{
-        display: flex;
-        flex-direction: column;
-    }
- }
-
-#mobile-menu.active {
-    display: block;
-}
-
-#desktop-menu.hidden {
-    display: none;
-}
-
- 
 
 /* === footer === */
 footer {

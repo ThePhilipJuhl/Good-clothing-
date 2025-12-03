@@ -7,12 +7,12 @@ export function navbar() {
 
     open_nav.addEventListener("click", () => {
         desktop_nav.classList.add("hidden")
-        mobile_nav.classList.add("active")
+        mobile_nav.classList.add("visible")
     })
 
     close_nav.addEventListener("click", () => {
         desktop_nav.classList.remove("hidden")
-        mobile_nav.classList.remove("active")
+        mobile_nav.classList.remove("visible")
     })
 }
 
