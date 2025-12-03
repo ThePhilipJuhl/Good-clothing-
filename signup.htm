@@ -11,10 +11,10 @@
 <body>
     <nav id="desktop-menu">
         <ul>
-            <li><a href="#">Logo</a></li>
+            <li><a href="index.html">Logo</a></li>
             <li class="nav-links hidden"><a href="#">Products</a></li>
-            <li class="nav-links hidden"><a href="#">Login</a></li>
-            <li class="nav-links hidden"><a href="#">Signup</a></li>
+            <li class="nav-links hidden"><a href="login.htm">Login</a></li>
+            <li class="nav-links hidden"><a href="signup.htm">Signup</a></li>
             <li id="open-nav">
                 <a href="#"><i class="fa-solid fa-bars"></i></a>
             </li>
@@ -31,10 +31,10 @@
             <li id="close-nav">
                 <a href="#"><i class="fa-solid fa-xmark"></i></a>
             </li>
-            <li><a href="#">Logo</a></li>
+            <li><a href="index.html">Logo</a></li>
             <li><a href="#">Products</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Signup</a></li>
+            <li><a href="login.htm">Login</a></li>
+            <li><a href="signup.htm">Signup</a></li>
             <li><a href="#">
                 <i class="fa-solid fa-cart-shopping"></i><span>Shopping cart</span>
             </a></li>
@@ -46,27 +46,27 @@
             <legend>Signup now</legend>
             <div>
                 <label for="email">Email</label>
-                <input type="text" id="email" name="email" required>
+                <input type="email" id="email" name="email" required>
             </div>
             <div>
                 <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
+                <input type="text" id="username" name="username" pattern="^[A-Za-z0-9._-]{2,20}$" required>
             </div>
             <div>
                 <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" required>
+                <input type="text" id="firstName" name="firstName" pattern="^[A-Za-z]{2,20}$" required>
             </div>
             <div>
                 <label for="lastName">Last name</label>
-                <input type="text" id="lastName" name="lastName" required>
+                <input type="text" id="lastName" name="lastName" pattern="^[A-Za-z]{2,20}$" required>
             </div>
             <div>
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password">
+                <input type="password" id="password" pattern="^[\S]{6,225}$" name="password">
             </div>
             <div>
                 <label for="repeatPassword">Repeat password</label>
-                <input type="password" id="repeatPassword" name="repeatPassword">
+                <input type="password" id="repeatPassword" pattern="^[\S]{6,255}$" name="repeatPassword">
             </div>
             <div>
                 <button type="submit">Sign up here</button>
@@ -91,5 +91,11 @@
         </div>
         <p>&copy; 2025 Good Clothing</p>
     </footer>
+    <dialog id="modal">
+        <header>
+            <h3></h3>
+        </header>
+        <p></p>
+    </dialog>
 </body>
 </html>

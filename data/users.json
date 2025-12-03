@@ -14,6 +14,30 @@
       "firstName": "sofie",
       "lastName": "olsen",
       "password": "1234567"
+    },
+    {
+      "id": "7449",
+      "email": "sofie@gmail.com",
+      "username": "sofieee",
+      "firstName": "sofie",
+      "lastName": "oslen",
+      "password": "123"
+    },
+    {
+      "id": "a251",
+      "email": "sss",
+      "username": "sasa",
+      "firstName": "sasa",
+      "lastName": "sasa",
+      "password": "sasa"
+    },
+    {
+      "id": "166d",
+      "email": "sofie",
+      "username": "sofie",
+      "firstName": "sofie",
+      "lastName": "sofie",
+      "password": "123"
     }
   ]
 }

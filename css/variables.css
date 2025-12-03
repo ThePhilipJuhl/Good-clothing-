@@ -65,6 +65,13 @@
     --icon-m: 30px;
     --icon-l: 40px;
     --icon-xl: 50px;
+
+    /* === border-radius === */
+    --border-radius-xs: 5px;
+    --border-radius-s: 10px;
+    --border-radius-m: 15px;
+    --border-radius-l: 20px;
+    --border-radius-xl: 25px;
 }
 
 

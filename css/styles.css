@@ -38,6 +38,15 @@ body{
     font-family: var(--font-main);
 }
 
+/* === modal === */
+#modal{
+    padding: var(--padding-xl);
+    text-align: center;
+    border: none;
+    border-radius: var(--border-radius-s);
+    margin: var(--margin-m);
+    margin: auto;
+}
 
 /* === nav === */
 nav  {
