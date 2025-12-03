@@ -34,6 +34,10 @@ a {
     font-size: var(--p-size);
 }
 
+body{
+    font-family: var(--font-main);
+}
+
 
 /* === nav === */
 nav  {

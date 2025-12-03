@@ -1,10 +1,19 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "John Doe",
-            "email": "johndoe@example.com",
-            "password": "password123",
-            "role": "user"
-    }]
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "password": "password123",
+      "role": "user"
+    },
+    {
+      "id": "7a5b",
+      "email": "sofie@gmail.com",
+      "username": "sofe",
+      "firstName": "sofie",
+      "lastName": "olsen",
+      "password": "1234567"
+    }
+  ]
 }

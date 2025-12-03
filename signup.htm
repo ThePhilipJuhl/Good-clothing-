@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good clothing</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/signup.js" type="module"></script>
+</head>
+<body>
+    <nav id="desktop-menu">
+        <ul>
+            <li><a href="#">Logo</a></li>
+            <li class="nav-links hidden"><a href="#">Products</a></li>
+            <li class="nav-links hidden"><a href="#">Login</a></li>
+            <li class="nav-links hidden"><a href="#">Signup</a></li>
+            <li id="open-nav">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+            </li>
+        </ul>
+
+        <ul class="shopping-cart">
+            <li><a href="#">
+                <span class="nav-links hidden">Shopping cart</span><i class="fa-solid fa-cart-shopping"></i>
+            </a></li>
+        </ul>
+    </nav>
+    <nav id="mobile-menu">
+        <ul>
+            <li id="close-nav">
+                <a href="#"><i class="fa-solid fa-xmark"></i></a>
+            </li>
+            <li><a href="#">Logo</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Signup</a></li>
+            <li><a href="#">
+                <i class="fa-solid fa-cart-shopping"></i><span>Shopping cart</span>
+            </a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form action="" id="frmSignup">
+            <legend>Signup now</legend>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div>
+                <label for="lastName">Last name</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div>
+                <label for="repeatPassword">Repeat password</label>
+                <input type="password" id="repeatPassword" name="repeatPassword">
+            </div>
+            <div>
+                <button type="submit">Sign up here</button>
+            </div>
+        </form>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <li><a class="footer-logo" href="#">Logo</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Signup</a></li>
+            </ul>
+            <div class="footer-icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+        <p>&copy; 2025 Good Clothing</p>
+    </footer>
+</body>
+</html>
