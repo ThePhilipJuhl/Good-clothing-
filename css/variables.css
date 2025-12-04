@@ -2,14 +2,14 @@
 
 :root{
     /* === colors  === */
-    --color-bg-main: #fffcf2;
-    --color-bg-accent: #e9e3d7;
+    --color-bg-main: #f4f1ed;
+    --color-bg-accent: #e7e4e0;
 
     --color-main: #6C7587;
     --color-accent: #58606D; 
 
     --color-text-main: #2E2E2E;
-    --color-text-medium: #6C7587;
+    --color-text-medium: #7d8087;
     --color-text-light: lightgray;
 
     --color-border: gray;
@@ -25,14 +25,15 @@
     /* === font size === */
     --h1-size: clamp(2.2rem, 4vw, 4rem);
     --h2-size: clamp(1.8rem, 3vw, 3rem);
-    --p-m-size: clamp(1.2rem, 1.4vw, 1.6rem);
+    --p-m-size: clamp(1.2rem, 1.3vw, 1.4rem);
     --p-size: clamp(1rem, 1.2vw, 1.25rem);
     --p-s-size: clamp(0.875rem, 1vw, 1rem);
 
     /* === font weights === */
     --font-weight-light: 300;
     --font-weight-medium: 500;
-    --font-weight-bold: 700;
+    --font-weight-thick: 600;
+    --font-weight-bold: 800;
     
     /* === gap === */
     --gap-xs: 0.25rem;

@@ -25,21 +25,22 @@ h2 {
 
 p{
     font-family: var(--font-main);
-    color: var(--color-text-medium);
     font-size: var(--p-size);
 }
 
 a {
     font-family: var(--font-main);
     font-size: var(--p-size);
+    color: var(--color-text-main);
+    text-decoration: none;
 }
 
 body{
     font-family: var(--font-main);
 }
+
 /* === responsive classes === */
 .hidden { display: none; }
-.visible { display: block; }
 
 /* === modal === */
 #modal{
@@ -51,55 +52,86 @@ body{
     margin: auto;
 }
 
-/* === nav === */
-nav#main-menu {
+/* === main nav === */
+nav#main-menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: var(--margin-s);
+    padding: var(--padding-s);
 
-    a {
-        text-decoration: none;
-        color: var(--color-text-main)
+    /* hiding the logo name and shopping cart text*/
+    .brand-name, .shoppingcart { 
+          display: none;
     }
 
     ul {
         list-style: none;
         display: flex;
+        justify-content: center;
+        align-items: center;
         gap: var(--gap-s);
+        
+        .logo, .brand-name {
+            font-size: var( --p-m-size);
+        }
+
+        li img {
+            width: 25px;
+            height: 25px;
+            margin-bottom: var(--margin-xs);
+        }
+
+        .brand-name  { font-weight: var(--font-weight-thick) }
+        .logo { font-weight: var(--font-weight-bold) }
 
         a {
             display: flex;
+            gap: var(--gap-xs);
             align-items: center;
-            justify-content: center;
-            gap: var(--gap-s);
-        }
-
-        #open-nav{
-            margin-top: var(--margin-xs);
         }
     }
 
-    /* hide login and logout on mobile screen */
-    #login, #logout {
-        display: none;
-    }
-
-    @media (min-width: 500px){
-        
-        /*show the li elements on larger screens*/
-        .nav-links, #login{
-            display: block;
+    @media (min-width: 600px){
+         ul {
+            gap: var(--gap-l);
         }
 
-        /*hide the burger icon*/
-        #open-nav{
-            display: none;
+        /* showing the logo name and shopping cart text*/
+        .brand-name, .shoppingcart { 
+          display: block;
         }
-
     }
 }
 
+/* === utility menu === */
+nav#utility-menu{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: var(--padding-s);
+    
+    background-color: var( --color-bg-accent);
+    color: var(--color-text-main);
+
+    a {
+        color: var( --color-text-main);
+    }
+
+    ul {
+        display: flex;
+        gap: var(--gap-m);
+        list-style: none;
+        
+    }
+
+    #btnLogout{
+        border: none;
+        background-color: var(--color-bg-accent);
+        font-family: var(--font-main);
+        font-size: var(--p-size);
+        color: var(--color-text-medium);
+    }
+}
 
 /* === footer === */
 footer {

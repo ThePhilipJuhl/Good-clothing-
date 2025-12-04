@@ -10,23 +10,29 @@
     <script src="js/login.js" type="module"></script>
 </head>
 <body>
-    <nav id="utility-menu" class="auth-menu">
-        <ul>
-            <li id="login" class="nav-links"><a href="login.htm">Login</a></li>
-            <li id="logout" class="nav-links"><button id="btnLogout">Logout</button></li>
-            <li id="signup" class="nav-links"><a href="signup.htm">Signup</a></li>
-            <p id="user"></p>         
-       </ul>
-    </nav>
-    <nav id="main-menu" class="main-menu">
-        <ul>
-            <li><a href="index.html">Logo</a></li>
-            <li class="nav-links"><a href="#">Products</a></li>
+    <nav id="utility-menu">
+        <ul id="utility-menu-logged-out">
+            <li id="login"><a href="login.htm">Login</a></li>
+            <li id="signup"><a href="signup.htm">Signup</a></li>
         </ul>
-
-        <ul class="shopping-cart">
+    
+        <ul id="utility-menu-logged-in">
+            <li><p id="user"></p></li>
+            <li id="logout"><button id="btnLogout">Log out</button></li>
+        </ul>
+    </nav>
+    
+    <nav id="main-menu">
+        <ul>
+            <li><a href="index.html">
+                <p class="logo">GC</p>
+                <p class="brand-name">Good clothing</p>
+            </a></li>
+            <li><a href="#">Products</a></li>
+        </ul>
+        <ul>
             <li><a href="#">
-                <p class="nav-links hidden">Shopping cart</p><i class="fa-solid fa-cart-shopping"></i>
+                <p class="shoppingcart">Shoppingchart</p><img src="img/shopping-bag.png" alt="cart">
             </a></li>
         </ul>
     </nav>
@@ -65,5 +71,11 @@
         </div>
         <p>&copy; 2025 Good Clothing</p>
     </footer>
+    <dialog id="modal">
+        <header>
+            <h3></h3>
+        </header>
+        <p></p>
+    </dialog>
 </body>
 </html>
