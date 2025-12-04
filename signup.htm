@@ -5,12 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Good clothing</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="js/script.js" type="module"></script>
-    <script src="js/signup.js" type="module"></script>
 </head>
 <body>
-   
+    <nav id="utility-menu">
+        <ul id="utility-menu-logged-out">
+            <li id="login"><a href="login.htm">Login</a></li>
+            <li id="signup"><a href="signup.htm">Signup</a></li>
+        </ul>
+    
+        <ul id="utility-menu-logged-in">
+            <li><p id="user"></p></li>
+            <li id="logout"><button id="btnLogout">Log out</button></li>
+        </ul>
+    </nav>
+    <nav id="main-menu">
+        <ul>
+            <li><a href="index.html">
+                <p class="logo">GC</p>
+                <p class="brand-name">Good clothing</p>
+            </a></li>
+            <li><a href="#">Products</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">
+                <p class="shoppingcart">Shoppingchart</p><img src="img/shopping-bag.png" alt="cart">
+            </a></li>
+        </ul>
+    </nav>
 
     <main>
         <form action="" id="frmSignup">
@@ -48,25 +70,24 @@
     <footer>
         <div class="footer-content">
             <ul>
-                <li><a class="footer-logo" href="#">Logo</a></li>
+                <li><a class="footer-logo" href="index.html">Logo</a></li>
                 <li><a href="#">Products</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Signup</a></li>
+                <li><a href="login.htm">Login</a></li>
+                <li><a href="signup.htm">Signup</a></li>
             </ul>
-            <div class="footer-icons">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-square-facebook"></i>
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-linkedin"></i>
-            </div>
         </div>
         <p>&copy; 2025 Good Clothing</p>
     </footer>
+
     <dialog id="modal">
         <header>
             <h3></h3>
         </header>
         <p></p>
     </dialog>
+
 </body>
 </html>
+
+
+

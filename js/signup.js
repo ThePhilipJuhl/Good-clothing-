@@ -15,7 +15,7 @@ document.querySelector('#frmSignup').addEventListener('submit', (e) => {
         showModal('Error', 'Passwords must match')
         return;
     }
-
+    
     const newUser = {
         email: email,
         username: username,
