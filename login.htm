@@ -10,34 +10,23 @@
     <script src="js/login.js" type="module"></script>
 </head>
 <body>
-    <nav id="desktop-menu">
+    <nav id="utility-menu" class="auth-menu">
+        <ul>
+            <li id="login" class="nav-links"><a href="login.htm">Login</a></li>
+            <li id="logout" class="nav-links"><button id="btnLogout">Logout</button></li>
+            <li id="signup" class="nav-links"><a href="signup.htm">Signup</a></li>
+            <p id="user"></p>         
+       </ul>
+    </nav>
+    <nav id="main-menu" class="main-menu">
         <ul>
             <li><a href="index.html">Logo</a></li>
-            <li class="nav-links hidden"><a href="#">Products</a></li>
-            <li class="nav-links hidden"><a href="login.htm">Login</a></li>
-            <li class="nav-links hidden"><a href="signup.htm">Signup</a></li>
-            <li id="open-nav">
-                <a href="#"><i class="fa-solid fa-bars"></i></a>
-            </li>
+            <li class="nav-links"><a href="#">Products</a></li>
         </ul>
 
         <ul class="shopping-cart">
             <li><a href="#">
-                <span class="nav-links hidden">Shopping cart</span><i class="fa-solid fa-cart-shopping"></i>
-            </a></li>
-        </ul>
-    </nav>
-    <nav id="mobile-menu">
-        <ul>
-            <li id="close-nav">
-                <a href="#"><i class="fa-solid fa-xmark"></i></a>
-            </li>
-            <li><a href="index.html">Logo</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="login.htm">Login</a></li>
-            <li><a href="signup.htm">Signup</a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-cart-shopping"></i><span>Shopping cart</span>
+                <p class="nav-links hidden">Shopping cart</p><i class="fa-solid fa-cart-shopping"></i>
             </a></li>
         </ul>
     </nav>

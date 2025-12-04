@@ -41,9 +41,6 @@ body{
 .hidden { display: none; }
 .visible { display: block; }
 
-.auth-hidden { display: none; }
-.auth-visible { display: block; }
-
 /* === modal === */
 #modal{
     padding: var(--padding-xl);
