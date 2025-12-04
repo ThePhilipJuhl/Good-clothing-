@@ -1,1 +1,45 @@
-@import url('styles.css')
+@import url('styles.css');
+
+:root{
+    /* pre-defined width and height */
+    --mobile-width: clamp(4rem, 95%, 25rem);
+    --desktop-width: clamp(12.5rem, 90%, 31.25rem);
+
+
+    /* input fields padding*/
+    --input-padding-mobile: 0.3rem 0.4rem;
+    --input-padding-desktop: 0.6rem 0.4rem;
+
+    /* input colors */
+    --input-active: 2.5px solid var(--color-active);
+}
+
+form {
+    padding: var(--padding-s);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-s);
+
+    legend {
+        font-weight: var(--font-weight-thick);
+        font-size: var(--h3-size);
+        margin-bottom: var(--margin-xs);
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        width: var(--mobile-width);
+    }
+
+    input {
+        padding: var(--input-padding-mobile);
+        background-color: var( --color-bg-main);
+        border: var(--border);
+        outline: none;
+    }
+        input:focus{
+            border: var(--input-active);
+            background-color: var(--color-white);
+        }
+} 

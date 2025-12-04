@@ -2,21 +2,24 @@
 
 :root{
     /* === colors  === */
+    --color-white: white;
+  
     --color-bg-main: #f4f1ed;
     --color-bg-accent: #e7e4e0;
 
     --color-main: #6C7587;
     --color-accent: #58606D; 
+    --color-accent-dark: #383E47;
+    --color-accent-night: #1c222b;
 
-    --color-text-main: #2E2E2E;
+    --color-text-main: #1c222b;
     --color-text-medium: #7d8087;
     --color-text-light: lightgray;
 
-    --color-border: gray;
+    --color-border: rgb(148, 148, 148);
     --color-border-light: lightgray;
 
-
-    --color-link-hover: blue;
+    --color-active: rgb(57, 93, 209);
 
     /* === fonts === */
     --font-main: 'Poppins', sans-serif;
@@ -25,6 +28,7 @@
     /* === font size === */
     --h1-size: clamp(2.2rem, 4vw, 4rem);
     --h2-size: clamp(1.8rem, 3vw, 3rem);
+    --h3-size: clamp(1.5rem, 2vw, 2.3rem);
     --p-m-size: clamp(1.2rem, 1.3vw, 1.4rem);
     --p-size: clamp(1rem, 1.2vw, 1.25rem);
     --p-s-size: clamp(0.875rem, 1vw, 1rem);
@@ -60,19 +64,13 @@
     --border: 1px solid var(--color-border);
     --border-light: 1px solid var(--color-border-light);
 
-    /* === icons === */
-    --icon-xs: 10px;
-    --icon-s: 20px;
-    --icon-m: 30px;
-    --icon-l: 40px;
-    --icon-xl: 50px;
+  /* === border-radius === */
+    --border-radius-xs: 0.3rem;   /* 5px  */
+    --border-radius-s: 0.6rem;    /* 10px */
+    --border-radius-m: 0.9rem;    /* 15px */
+    --border-radius-l: 1.3rem;    /* 20px */
+    --border-radius-xl: 1.6rem;   /* 25px */
 
-    /* === border-radius === */
-    --border-radius-xs: 5px;
-    --border-radius-s: 10px;
-    --border-radius-m: 15px;
-    --border-radius-l: 20px;
-    --border-radius-xl: 25px;
 }
 
 

@@ -39,6 +39,22 @@ body{
     font-family: var(--font-main);
 }
 
+/* === buttons === */
+.button-full {
+    background-color: var(--color-accent-night);
+    border: none;
+    font-family: var(--font-main);
+    font-size: var(--p-size);
+    padding: var(--padding-s);
+    color: var(--color-text-light);
+
+    &:hover{
+        background-color: var(--color-accent-dark);
+    }
+}
+
+
+
 /* === responsive classes === */
 .hidden { display: none; }
 
@@ -81,7 +97,7 @@ nav#main-menu{
             margin-bottom: var(--margin-xs);
         }
 
-        .brand-name  { font-weight: var(--font-weight-thick) }
+        .brand-name  { font-weight: var(--font-weight-medium) }
         .logo { font-weight: var(--font-weight-bold) }
 
         a {
