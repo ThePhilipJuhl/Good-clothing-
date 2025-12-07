@@ -15,7 +15,7 @@ document.querySelector('#loginFrm').addEventListener('submit', (e) => {
         data.forEach(user => {
             if (!found) {
                 if (user.email === email && user.password == password) {
-                    sessionStorage.setItem(SESSION_STORAGE_USER_EMAIL, email);
+                    localStorage.setItem(LOCAL_STORAGE_USER_EMAIL, email);
                     location.href = 'login.htm';
 
                     found = true;

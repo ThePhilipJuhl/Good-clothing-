@@ -1,7 +1,7 @@
 import { SESSION_STORAGE_USER_EMAIL } from './info.js';
 
 export function loginCheck() {
-    const email = sessionStorage.getItem(SESSION_STORAGE_USER_EMAIL);
+    const email = localStorage.getItem(LOCAL_STORAGE_USER_EMAIL);
     const user = document.querySelector('#user');
 
     if (email !== null) {
