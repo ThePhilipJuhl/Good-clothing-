@@ -1,5 +1,5 @@
 import { USERS_BASE_URL } from './info.js';
-import { SESSION_STORAGE_USER_EMAIL } from './info.js';
+import { LOCAL_STORAGE_USER_EMAIL } from './info.js';
 import { showModal } from './modal.js';
 
 document.querySelector('#loginFrm').addEventListener('submit', (e) => {

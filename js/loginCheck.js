@@ -1,4 +1,4 @@
-import { SESSION_STORAGE_USER_EMAIL } from './info.js';
+import { LOCAL_STORAGE_USER_EMAIL } from './info.js';
 
 export function loginCheck() {
     const email = localStorage.getItem(LOCAL_STORAGE_USER_EMAIL);
