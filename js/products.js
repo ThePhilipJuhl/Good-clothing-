@@ -1,5 +1,7 @@
 
 
+
+
     fetch('https://fakestoreapi.com/products')
         .then(response => {
             if (!response.ok) {
@@ -17,7 +19,6 @@
         });
 
     function displayProducts(products) {
-
         productsGrid.innerHTML = '';
 
         const templateContent = productTemplate.content;
@@ -29,7 +30,6 @@
             const productCategory = productCard.querySelector('.product-category');
             const productTitle = productCard.querySelector('.product-title');
             const productPrice = productCard.querySelector('.product-price');
-            const btnAddQuantity = productCard.querySelector('.btn-add-quantity');
             const btnAddCart = productCard.querySelector('.btn-add-cart');
 
             productImage.src = product.image;
@@ -38,15 +38,20 @@
             productTitle.textContent = product.title;
             productPrice.textContent = `$${product.price.toFixed(2)}`;
 
-            btnAddQuantity.addEventListener('click', () => {
-                console.log('Add quantity clicked for:', product.title);
+            // Make the entire product card clickable
+            productCard.querySelector('.product-card').addEventListener('click', (e) => {
+                // Don't navigate if clicking on buttons
+                if (e.target.closest('.product-actions')) {
+                    return;
+                }
+                window.location.href = `product.htm?id=${product.id}`;
             });
 
-            btnAddCart.addEventListener('click', () => {
+            btnAddCart.addEventListener('click', (e) => {
+                e.stopPropagation();
                 console.log('Add to cart clicked for:', product.title);
             });
 
             productsGrid.appendChild(productCard);
         });
-    };
-
+    }
