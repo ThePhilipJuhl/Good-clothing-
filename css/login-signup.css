@@ -1,0 +1,50 @@
+@import url('form.css');
+
+:root {
+  --gap-m: 1rem;
+  --form-min-width: clamp(1rem, 97%, 28rem);
+
+  --img-height-mobile: 18.75rem; /* 300px */
+  --img-height-desktop: 37.5rem; /* 600px */
+}
+
+/* Since form is already styled, we only style the forms width and the image, so it fits the desired layout. */
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-s);
+
+    .login-img-container{
+        height: var(--img-height-mobile);
+        width: 100%;
+
+        img {
+            width: 100%;            
+            height: 100%;           
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+    }
+
+    form {
+        width: var(--form-min-width);
+    }
+
+    @media (min-width: 600px){
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: var(--gap-l);
+
+        .login-img-container{
+            width: var(--img-height-desktop);
+            height: var(--img-height-desktop);
+        }
+
+    }
+
+}
+
+

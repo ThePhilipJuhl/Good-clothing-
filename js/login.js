@@ -6,27 +6,27 @@ document.querySelector('#loginFrm').addEventListener('submit', (e) => {
     e.preventDefault();
 
     fetch(`${USERS_BASE_URL}/users`)
-    .then(response => response.json())
-    .then(data => {
-        const email = e.target.email.value.trim()
-        const password = e.target.password.value.trim()
+        .then(res => res.json())
+        .then(users => {
+            const email = e.target.email.value.trim()
+            const password = e.target.password.value.trim()
 
-        let found = false;
-        data.forEach(user => {
-            if (!found) {
-                if (user.email === email && user.password == password) {
-                    localStorage.setItem(LOCAL_STORAGE_USER_EMAIL, email);
-                    location.href = 'login.htm';
+            let loginSuccess = false;
+            users.forEach(user => {
+                if (!loginSuccess) {
+                    if (user.email === email && user.password == password) {
+                        localStorage.setItem(LOCAL_STORAGE_USER_EMAIL, email);
+                        location.href = "index.html";
 
-                    found = true;
+                        loginSuccess = true;
+                    }
                 }
-            }
-        });
+            });
 
-        if (!found){
-            showModal('validation error', 'incorrect credentials');
-        }
-    })
-    .catch(error => console.log(error))
+            if (!loginSuccess) {
+                showModal('validation error', 'incorrect crendentials')
+            }
+        })
+        .catch(error => console.log(error))
 })
 

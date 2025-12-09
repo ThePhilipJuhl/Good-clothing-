@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Good clothing</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/login-signup.css">
     <script src="js/script.js" type="module"></script>
 </head>
 <body>
@@ -36,36 +36,56 @@
     </nav>
 
     <main>
-        <form action="" id="frmSignup">
-            <legend>Signup now</legend>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="@.com" required>
+        <section>
+            <div class="login-img-container">
+                <img src="img/login-640x920.jpg" alt="">    
             </div>
-            <div>
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" pattern="^[A-Za-z0-9._-]{2,20}$" placeholder="2-20 characters" required>
-            </div>
-            <div>
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" pattern="^[A-Za-z]{2,20}$" placeholder="2-20 characters" required>
-            </div>
-            <div>
-                <label for="lastName">Last name</label>
-                <input type="text" id="lastName" name="lastName" pattern="^[A-Za-z]{2,20}$" placeholder="2-20 characters" required>
-            </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" id="password" pattern="^[\S]{6,225}$" name="password" placeholder="6-225 characters" required>
-            </div>
-            <div>
-                <label for="repeatPassword">Repeat password</label>
-                <input type="password" id="repeatPassword" pattern="^[\S]{6,255}$" name="repeatPassword" placeholder="6-225 characters" required>
-            </div>
-            <div>
-                <button class="button-full" type="submit">Sign up here</button>
-            </div>
-        </form>
+            <form action="" id="frmSignup">
+                <legend>Signup now</legend>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" pattern="^[A-Za-z0-9._-]{2,20}$" required>
+                </div>
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" pattern="^[A-Za-z]{2,20}$" required>
+                </div>
+                <div>
+                    <label for="lastName">Last name</label>
+                    <input type="text" id="lastName" name="lastName" pattern="^[A-Za-z]{2,20}$" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                     <!-- 
+                        ?= -> look around
+                        .* -> search the entire input for [content inside here]
+                        {x,x} min / max characters
+                      -->
+                    <input 
+                        type="password" 
+                        id="password" 
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!?@-_.#€%&/()=+]){8,20}" 
+                        name="password" 
+                        required>
+                </div>
+                <div>
+                    <label for="repeatPassword">Repeat password</label>
+                    <input 
+                        type="password" 
+                        id="repeatPassword" 
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!?@-_.#€%&/()=+]){8,20}" 
+                        name="repeatPassword" 
+                        required>
+                </div>
+                <div>
+                    <button class="button-full" type="submit">Sign up here</button>
+                </div>
+            </form>
+        </section>
     </main>
     
     <footer>

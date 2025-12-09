@@ -1,13 +1,13 @@
 @import url('styles.css');
 
 :root{
-    /* pre-defined width and height */
-    --mobile-width: clamp(4rem, 95%, 25rem);
+    /* pre-defined width and height  for*/
+    --mobile-width: clamp(4rem, 100%, 25rem);
     --desktop-width: clamp(12.5rem, 90%, 31.25rem);
 
 
     /* input fields padding*/
-    --input-padding-mobile: 0.3rem 0.4rem;
+    --input-padding-mobile: 0.5rem 0.7rem;
     --input-padding-desktop: 0.6rem 0.4rem;
 
     /* input colors */
@@ -37,6 +37,7 @@ form {
         background-color: var( --color-bg-main);
         border: var(--border);
         outline: none;
+        font-size: var(--p-size);
     }
         input:focus{
             border: var(--input-active);
