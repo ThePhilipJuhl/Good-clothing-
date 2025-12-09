@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Good clothing</title>
+    <title>Good clothing - Products</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/products.css">
     <script src="js/script.js" type="module"></script>
+    <script src="js/products.js" type="module"></script>
 </head>
 <body>
     <nav id="utility-menu">
@@ -35,7 +37,32 @@
     </nav>
 
     <main>
-       content
+        <nav class="breadcrumb">
+            <a href="index.html">homepage</a> &gt; <span>Products</span>
+        </nav>
+        <h1>Products</h1>
+        <div class="products-grid" id="productsGrid">
+        </div>
+        <template id="productTemplate">
+            <article class="product-card">
+                <div class="product-image-container">
+                    <img class="product-image" src="#" alt="Product image">
+                </div>
+                <div class="product-details">
+                    <p class="product-category"></p>
+                    <h3 class="product-title"></h3>
+                    <p class="product-price"></p>
+                </div>
+                <div class="product-actions">
+                    <button class="btn-add-quantity" aria-label="Add quantity">
+                        <span>+</span>
+                    </button>
+                    <button class="btn-add-cart" aria-label="Add to cart">
+                        <img src="img/shopping-bag.png" alt="Add to cart">
+                    </button>
+                </div>
+            </article>
+        </template>
     </main>
     
     <footer>
