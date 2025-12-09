@@ -37,9 +37,17 @@
 
     <main>
         <section>
-            <div class="login-img-container">
-                <img src="img/login-640x920.jpg" alt="">    
-            </div>
+            <picture class="login-img-container">
+                <!-- Large screens -->
+                <source srcset="img/login-1900.jpg" media="(min-width: 1024px)">
+                    
+                <!-- Medium screens -->
+                <source srcset="img/login-1024.jpg" media="(min-width: 400px)">
+                    
+                <!-- Default / small screens -->
+                <img src="img/login-400.jpg" loading="lazy" alt="Fashion clothes picture">
+            </picture>
+            
             <form action="" id="frmSignup">
                 <legend>Signup now</legend>
                 <div>

@@ -76,10 +76,12 @@ img{
 nav#main-menu{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    gap: var(--gap-m);
     padding: var(--padding-s);
     border-bottom: var(--border-light);
-    margin-bottom: var(--margin-m);;
+    margin-bottom: var(--margin-m);
 
     /* hiding the logo name and shopping cart text*/
     .brand-name, .shoppingcart { 
@@ -90,8 +92,9 @@ nav#main-menu{
         list-style: none;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
-        gap: var(--gap-s);
+        gap: var(--gap-l);
         
         .logo, .brand-name {
             font-size: var( --p-m-size);
@@ -108,8 +111,11 @@ nav#main-menu{
 
         a {
             display: flex;
-            gap: var(--gap-xs);
+            gap: var(--gap-s);
             align-items: center;
+            flex-wrap: wrap;
+            padding: var(--padding-s) var(--padding-m);
+            background-color: red;
         }
     }
 
@@ -117,7 +123,7 @@ nav#main-menu{
          ul {
             gap: var(--gap-l);
         }
-
+ 
         /* showing the logo name and shopping cart text*/
         .brand-name, .shoppingcart { 
           display: block;
@@ -130,19 +136,25 @@ nav#utility-menu{
     display: flex;
     justify-content: right;
     align-items: center;
-    padding: var(--padding-s);
+    padding: var(--padding-m);
     
     background-color: var( --color-bg-accent);
     color: var(--color-text-main);
 
     a {
-        color: var( --color-text-main);
+        color: var( --color-text-medium);
+        padding: var(--padding-s) var(--padding-xl);
+        background-color: var(--color-bg-main);
+        border-radius: var(--border-radius-xl);
+        background-color: red;
+    
     }
 
     ul {
         display: flex;
-        gap: var(--gap-m);
+        gap: var(--gap-l);
         list-style: none;
+        flex-wrap: wrap;
         
     }
 
@@ -164,7 +176,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: var(--gap-m);
     text-align: center;
 
     ul {
@@ -173,11 +184,13 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: var(--gap-s);
+        gap: var(--gap-xl);
 
         a{
             font-family: var(--font-main);
             font-size: var(--p-size);
+            padding: var(--padding-s) var(--padding-m);
+            background-color: red;
         
             &:hover {
                 color: var(--color-link-hover);
@@ -191,11 +204,14 @@ footer {
         }
     }
 
+    p {
+        margin-top: var(--margin-m);
+    }
+
     @media (min-width: 500px){
         ul {
             display: flex;
             flex-direction: row;
-            gap: var(--gap-xl);
         }
     }
 }
