@@ -9,11 +9,6 @@ body{
     background-color: var(--color-bg-main);
 }
 
-main {
-    max-width: var(--max-width);
-    margin: auto;
-    margin: var(--margin-xs);
-}
 
 /* === headers, text and links === */
 h1, h2, h3, h4{

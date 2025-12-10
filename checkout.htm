@@ -38,128 +38,120 @@
     <main>
         <section id="shopping-cart">
             <header>
-                <h2>Shopping cart</h2>
+                <h3>Total price</h3>
             </header>
-
-            <article id="shopping-cart-item">
-                <div>
-                    <img src="#" alt="">
-                    <div>
-                        <p id="category"></p>
-                        <p id="title"></p>
-                        <p id="price"></p>
-                    </div>
-                </div>
-                <button id="remove-item"></button>
-            </article>
-        </section>
-        <form>
-            <!--Shipping address-->
-            <fieldset>
-                <legend>Shipping address</legend>
-                <div>
-                    <label for="ship-firstName">First Name</label>
-                    <input type="text" id="ship-firstName" name="ship-firstName" pattern="^[A-Za-z]{2,40}$" required>
-                </div>
-                <div>
-                    <label for="ship-lastName">Last Name</label>
-                    <input type="text" id="ship-lastName" name="ship-lastName" pattern="^[A-Za-z]{2,40}$" required>
-                </div>
-                <div>
-                    <label for="ship-address">Address</label>
-                    <input type="text" id="ship-address" name="ship-address" pattern="^[A-Za-z0-9\s.,/\-]{2,100}$" required>
-                </div>
-                <div>
-                    <label for="ship-address2">Address line 2 (optional)</label>
-                    <input type="text" id="ship-address2" name="ship-address2" pattern="^[A-Za-z0-9\s.,/\-]{2,100}$">
-                </div>
-                <div>
-                    <label for="ship-city">City</label>
-                    <input type="text" id="ship-city" name="ship-city" pattern="^[A-Za-z\s.'\-]{2,100}$" required>
-                </div>
-                <div>
-                    <label for="ship-postal">Postal code</label>
-                    <input type="text" id="ship-postal" name="ship-postal" pattern="^[A-Za-z0-9\s\-]{2,100}$" required>
-                </div>
-                <div>
-                    <label for="ship-region">Country</label>
-                    <select id="ship-region" name="ship-region" required>
-                        <option value="">Select country</option>
-                        <option value="denmark">Denmark</option>
-                        <option value="sweden">Sweden</option>
-                        <option value="germany">Germany</option>
-                        <option value="france">France</option>
-                        <option value="italy">Italy</option>
-                    </select>
-                </div>            
-            </fieldset>
+            <p id="total-price">212183209 kr</p>
             
-            <!--Billing address-->
-            <fieldset>
-                <legend>Billing adress</legend>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div>
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName" pattern="^[A-Za-z]{2,40}$" required>
-                </div>
-                <div>
-                    <label for="lastName">Last name</label>
-                    <input type="text" id="lastName" name="lastName" pattern="^[A-Za-z]{2,40}$" required>
-                </div>
-                <div>
-                    <label for="address">Address</label>
-                    <input type="text" id="address" name="address" pattern="^[A-Za-z0-9\s.,/\-]{2,100}$" required>
-                </div>
-                <div>
-                    <label for="city">City</label>
-                    <input type="text" id="city" name="city" pattern="^[A-Za-z\s.'\-]{2,100}$" required>
-                </div>
-                <div>
-                    <label for="postalCode">Postal code</label>
-                    <input type="text" id="postalCode" name="postalCode" pattern="^[A-Za-z0-9\s\-]{2,100}$" required>
-                </div>
-            </fieldset>
-    
-            <!--Credit card information-->
-            <fieldset>
-                <legend>Credit card information</legend>
-                <div>
-                    <label for="card-number">Card number</label>
-                    <input type="text" name="card-number" id="card-number" maxlength="19" pattern="[0-9\s]{13,19}">
-                </div>
-                <div class="month-year">
+        </section>
+        <section id="payment-section">
+            <form>
+                <!--Shipping address-->
+                <fieldset>
+                    <legend>Shipping address</legend>
                     <div>
-                        <label for="card-month">Month</label>
-                        <select id="card-month" name="card-month">
-                            <option value="">Select month</option>
-                            <option value="01">January</option>
-                            <option value="02">February</option>
-                            <option value="03">March</option>
-                            <option value="04">April</option>
-                            <option value="05">May</option>
-                            <option value="06">June</option>
-                            <option value="07">July</option>
-                            <option value="08">August</option>
-                            <option value="09">September</option>
-                            <option value="10">October</option>
-                            <option value="11">November</option>
-                            <option value="12">December</option>
+                        <label for="ship-firstName">First Name</label>
+                        <input type="text" id="ship-firstName" name="ship-firstName" pattern="^[A-Za-z]{2,40}$" required>
+                    </div>
+                    <div>
+                        <label for="ship-lastName">Last Name</label>
+                        <input type="text" id="ship-lastName" name="ship-lastName" pattern="^[A-Za-z]{2,40}$" required>
+                    </div>
+                    <div>
+                        <label for="ship-address">Address</label>
+                        <input type="text" id="ship-address" name="ship-address" pattern="^[A-Za-z0-9\s.,/\-]{2,100}$" required>
+                    </div>
+                    <div>
+                        <label for="ship-address2">Address line 2 (optional)</label>
+                        <input type="text" id="ship-address2" name="ship-address2" pattern="^[A-Za-z0-9\s.,/\-]{2,100}$">
+                    </div>
+                    <div>
+                        <label for="ship-city">City</label>
+                        <input type="text" id="ship-city" name="ship-city" pattern="^[A-Za-z\s.'\-]{2,100}$" required>
+                    </div>
+                    <div>
+                        <label for="ship-postal">Postal code</label>
+                        <input type="text" id="ship-postal" name="ship-postal" pattern="^[A-Za-z0-9\s\-]{2,100}$" required>
+                    </div>
+                    <div>
+                        <label for="ship-region">Country</label>
+                        <select id="ship-region" name="ship-region" required>
+                            <option value="">Select country</option>
+                            <option value="denmark">Denmark</option>
+                            <option value="sweden">Sweden</option>
+                            <option value="germany">Germany</option>
+                            <option value="france">France</option>
+                            <option value="italy">Italy</option>
                         </select>
+                    </div>            
+                </fieldset>
+            
+                <!--Billing address-->
+                <fieldset>
+                    <legend>Billing adress</legend>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
                     <div>
-                        <label for="card-year">Year</label>
-                        <input type="text" name="card-year" id="card-year">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" pattern="^[A-Za-z]{2,40}$" required>
                     </div>
-                </div>
-                <div>
-                    <label for="card-cvv">CVV</label>
-                    <input type="text" name="card-cvv" id="card-cvv">
-                </div>
-            </fieldset>
-        </form>
+                    <div>
+                        <label for="lastName">Last name</label>
+                        <input type="text" id="lastName" name="lastName" pattern="^[A-Za-z]{2,40}$" required>
+                    </div>
+                    <div>
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" pattern="^[A-Za-z0-9\s.,/\-]{2,100}$" required>
+                    </div>
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" pattern="^[A-Za-z\s.'\-]{2,100}$" required>
+                    </div>
+                    <div>
+                        <label for="postalCode">Postal code</label>
+                        <input type="text" id="postalCode" name="postalCode" pattern="^[A-Za-z0-9\s\-]{2,100}$" required>
+                    </div>
+                </fieldset>
+    
+                <!--Credit card information-->
+                <fieldset>
+                    <legend>Credit card information</legend>
+                    <div>
+                        <label for="card-number">Card number</label>
+                        <input type="text" name="card-number" id="card-number" maxlength="19" pattern="[0-9\s]{13,19}">
+                    </div>
+                    <div class="month-year">
+                        <div>
+                            <label for="card-month">Month</label>
+                            <select id="card-month" name="card-month">
+                                <option value="">Select month</option>
+                                <option value="01">January</option>
+                                <option value="02">February</option>
+                                <option value="03">March</option>
+                                <option value="04">April</option>
+                                <option value="05">May</option>
+                                <option value="06">June</option>
+                                <option value="07">July</option>
+                                <option value="08">August</option>
+                                <option value="09">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="card-year">Year</label>
+                            <input type="text" name="card-year" id="card-year">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="card-cvv">CVV</label>
+                        <input type="text" name="card-cvv" id="card-cvv">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
     </main>
 
     <footer>
