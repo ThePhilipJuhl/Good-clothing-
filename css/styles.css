@@ -53,6 +53,7 @@ body{
     }
 }
 
+
 /* === responsive images === */
 img{
     width: 100%;
@@ -115,7 +116,7 @@ nav#main-menu{
             align-items: center;
             flex-wrap: wrap;
             padding: var(--padding-s) var(--padding-m);
-            background-color: red;
+            /* background-color: red; */
         }
     }
 
@@ -146,7 +147,7 @@ nav#utility-menu{
         padding: var(--padding-s) var(--padding-xl);
         background-color: var(--color-bg-main);
         border-radius: var(--border-radius-xl);
-        background-color: red;
+        /* background-color: red; */
     
     }
 
@@ -190,7 +191,7 @@ footer {
             font-family: var(--font-main);
             font-size: var(--p-size);
             padding: var(--padding-s) var(--padding-m);
-            background-color: red;
+            /* background-color: red; */
         
             &:hover {
                 color: var(--color-link-hover);

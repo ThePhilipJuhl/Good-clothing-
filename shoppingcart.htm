@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="checkoutFrm">
+        <legend>Shoppingcart</legend>
+    
+        <fieldset>
+            <legend>Delivery Address</legend>
+            <div>
+                <label for="delivery_street">Street</label>
+                <input type="text" id="delivery_street" name="delivery_street" required>
+            </div>
+            <div>
+                <label for="delivery_city">City</label>
+                <input type="text" id="delivery_city" name="delivery_city" required>
+            </div>
+            <div>
+                <label for="delivery_zip">ZIP Code</label>
+                <input type="text" id="delivery_zip" name="delivery_zip" required>
+            </div>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Billing Address</legend>
+            <div>
+                <label for="billing_street">Street</label>
+                <input type="text" id="billing_street" name="billing_street" required>
+            </div>
+            <div>
+                <label for="billing_city">City</label>
+                <input type="text" id="billing_city" name="billing_city" required>
+            </div>
+            <div>
+                <label for="billing_zip">ZIP Code</label>
+                <input type="text" id="billing_zip" name="billing_zip" required>
+            </div>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Card Information</legend>
+            <div>
+                <label for="card_number">Card Number</label>
+                <input type="text" id="card_number" name="card_number" required>
+            </div>
+            <div>
+                <label for="card_exp">Expiration Date (MM/YY)</label>
+                <input type="text" id="card_exp" name="card_exp" required>
+            </div>
+            <div>
+                <label for="card_cvc">CVC</label>
+                <input type="text" id="card_cvc" name="card_cvc" required>
+            </div>
+        </fieldset>
+    
+        <div>
+            <button class="button-full" type="submit">Confirm Order</button>
+        </div>
+    </form>
+    
+</body>
+</html>

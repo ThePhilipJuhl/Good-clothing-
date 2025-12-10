@@ -4,18 +4,17 @@
 :root{
     /* === colors  === */
     --color-white: white;
-  
+
     --color-bg-main: #f4f1ed;
     --color-bg-accent: #e7e4e0;
 
-    --color-main: #6C7587;
     --color-accent: #58606D; 
     --color-accent-dark: #383E47;
     --color-accent-night: #1c222b;
 
     --color-text-main: #1c222b;
-    --color-text-medium: #7d8087;
-    --color-text-light: lightgray;
+    --color-text-medium: #696C72;
+    --color-text-light: #f4f1ed;
 
     --color-border: rgb(148, 148, 148);
     --color-border-light: lightgray;
