@@ -1,8 +1,7 @@
 
+import { BASE_URL } from './info.js';
 
-
-
-    fetch('https://fakestoreapi.com/products')
+    fetch(BASE_URL)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
