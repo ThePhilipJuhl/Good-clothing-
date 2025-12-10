@@ -54,7 +54,6 @@ body{
     }
 }
 
-
 /* === responsive images === */
 img{
     width: 100%;
@@ -72,6 +71,11 @@ img{
     border-radius: var(--border-radius-s);
     margin: var(--margin-m);
     margin: auto;
+
+    .close {
+        padding: var(--padding-xs);
+        margin-bottom: var(--margin-m);
+    }
 }
 
 /* === main nav === */

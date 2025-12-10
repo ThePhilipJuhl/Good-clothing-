@@ -5,6 +5,10 @@ export const showModal = (header, text) => {
     modal.querySelector('h3').innerText = header;
     modal.querySelector('p').innerText = text;
     modal.showModal();
+
+    closeBtn.addEventListener('click', () => {
+        modal.close();
+    });
 }
 
 // this is styled in styles.css 
