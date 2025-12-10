@@ -72,6 +72,8 @@
     --border-radius-l: 1.3rem;    /* 20px */
     --border-radius-xl: 1.6rem;   /* 25px */
 
+    --max-width: 2000px;
+
 }
 
 

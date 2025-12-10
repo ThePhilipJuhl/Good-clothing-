@@ -39,7 +39,8 @@ form {
         outline: none;
         font-size: var(--p-size);
     }
-        input:focus{
+    
+    input:focus{
             border: var(--input-active);
             background-color: var(--color-white);
         }

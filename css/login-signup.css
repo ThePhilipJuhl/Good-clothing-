@@ -15,7 +15,9 @@ section{
     align-items: center;
     gap: var(--gap-s);
 
+    
     .login-img-container{
+        display: none;
         height: var(--img-height-mobile);
         width: 100%;
 
@@ -39,6 +41,7 @@ section{
         gap: var(--gap-l);
 
         .login-img-container{
+            display: block;
             width: var(--img-height-desktop);
             height: var(--img-height-desktop);
         }
