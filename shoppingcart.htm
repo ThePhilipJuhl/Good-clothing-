@@ -3,65 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/shoppingcart.css">
+    <script src="js/script.js" type="module"></script>
     <title>Document</title>
 </head>
 <body>
-    <form action="" id="checkoutFrm">
-        <legend>Shoppingcart</legend>
+    <nav id="utility-menu">
+        <ul id="utility-menu-logged-out">
+            <li id="login"><a href="login.htm">Login</a></li>
+            <li id="signup"><a href="signup.htm">Signup</a></li>
+        </ul>
     
-        <fieldset>
-            <legend>Delivery Address</legend>
-            <div>
-                <label for="delivery_street">Street</label>
-                <input type="text" id="delivery_street" name="delivery_street" required>
-            </div>
-            <div>
-                <label for="delivery_city">City</label>
-                <input type="text" id="delivery_city" name="delivery_city" required>
-            </div>
-            <div>
-                <label for="delivery_zip">ZIP Code</label>
-                <input type="text" id="delivery_zip" name="delivery_zip" required>
-            </div>
-        </fieldset>
+        <ul id="utility-menu-logged-in">
+            <li><p id="user"></p></li>
+            <li id="logout"><button id="btnLogout">Log out</button></li>
+        </ul>
+    </nav>
+    <nav id="main-menu">
+        <ul>
+            <li><a href="index.html">
+                <p class="logo">GC</p>
+                <p class="brand-name">Good clothing</p>
+            </a></li>
+            <li><a href="#">Products</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">
+                <p class="shoppingcart">Shoppingchart</p><img src="img/shopping-bag.png" alt="cart">
+            </a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="shopping-cart-container">
+            <section id="shopping-cart">
+                <header>
+                    <h2>Shopping cart</h2>
+                </header>
     
-        <fieldset>
-            <legend>Billing Address</legend>
-            <div>
-                <label for="billing_street">Street</label>
-                <input type="text" id="billing_street" name="billing_street" required>
-            </div>
-            <div>
-                <label for="billing_city">City</label>
-                <input type="text" id="billing_city" name="billing_city" required>
-            </div>
-            <div>
-                <label for="billing_zip">ZIP Code</label>
-                <input type="text" id="billing_zip" name="billing_zip" required>
-            </div>
-        </fieldset>
-    
-        <fieldset>
-            <legend>Card Information</legend>
-            <div>
-                <label for="card_number">Card Number</label>
-                <input type="text" id="card_number" name="card_number" required>
-            </div>
-            <div>
-                <label for="card_exp">Expiration Date (MM/YY)</label>
-                <input type="text" id="card_exp" name="card_exp" required>
-            </div>
-            <div>
-                <label for="card_cvc">CVC</label>
-                <input type="text" id="card_cvc" name="card_cvc" required>
-            </div>
-        </fieldset>
-    
-        <div>
-            <button class="button-full" type="submit">Confirm Order</button>
-        </div>
-    </form>
-    
+                <article id="shopping-cart-item">
+                    <div>
+                        <img src="#" alt="">
+                        <div>
+                            <p id="category"></p>
+                            <p id="title"></p>
+                            <p id="price"></p>
+                        </div>
+                    </div>
+                    <button id="remove-item"></button>
+                </article>
+            </section>
+            <section class="checkout-section">
+                <header>
+                    <h2>Total price</h2>
+                </header>
+                <div>
+                    <p id="total-price">212183209 kr</p>
+                    <a href="checkout.htm" class="button-full">Checkout</a>
+                </div>
+            </section>
+        </section>
+    </main>
+     
+    <footer>
+        <ul>
+            <li><a class="footer-logo" href="index.html">Logo</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="login.htm">Login</a></li>
+            <li><a href="signup.htm">Signup</a></li>
+        </ul>
+        <p>&copy; 2025 Good Clothing</p>
+    </footer>
 </body>
 </html>

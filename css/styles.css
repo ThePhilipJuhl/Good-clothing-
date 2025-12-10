@@ -45,7 +45,7 @@ body{
     border: none;
     font-family: var(--font-main);
     font-size: var(--p-size);
-    padding: var(--padding-s);
+    padding: var(--padding-s) var(--padding-xxl);
     color: var(--color-text-light);
 
     &:hover{
