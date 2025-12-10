@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Good clothing - Products</title>
+    <title>Good clothing - Product</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/product.css">
     <script src="js/script.js" type="module"></script>
-    <script src="js/products.js" type="module"></script>
+    <script src="js/product.js" type="module"></script>
 </head>
 <body>
     <nav id="utility-menu">
@@ -38,28 +38,24 @@
 
     <main>
         <nav class="breadcrumb">
-            <a href="index.html">homepage</a> &gt; <span>Products</span>
+            <a href="index.html">homepage</a> &gt; <a href="products.htm">Products</a> &gt; <span id="productNameBreadcrumb">Product</span>
         </nav>
-        <h1>Products</h1>
-        <div class="products-grid" id="productsGrid">
-        </div>
-        <template id="productTemplate">
-            <article class="product-card">
-                <div class="product-image-container">
-                    <img class="product-image" src="#" alt="Product image">
-                </div>
-                <div class="product-details">
-                    <p class="product-category"></p>
-                    <h3 class="product-title"></h3>
-                    <p class="product-price"></p>
-                </div>
-                <div class="product-actions">
-                    <button class="btn-add-cart" aria-label="Add to cart">
-                        <img src="img/shopping-bag.png" alt="Add to cart">
-                    </button>
-                </div>
-            </article>
-        </template>
+        
+        <a href="products.htm" class="back-link">&lt; back to products</a>
+
+        <section class="product-detail">
+            <div class="product-image-container">
+                <img id="productImage" src="#" alt="Product image" class="product-image">
+            </div>
+            <div class="product-info">
+                <p class="product-category" id="productCategory"></p>
+                <h1 class="product-title" id="productTitle"></h1>
+                <p class="product-price" id="productPrice"></p>
+                <h2 class="description-heading">Description</h2>
+                <p class="product-description" id="productDescription"></p>
+                <button class="btn-add-cart-full" id="btnAddToCart">Add to cart</button>
+            </div>
+        </section>
     </main>
     
     <footer>
