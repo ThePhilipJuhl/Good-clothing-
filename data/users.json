@@ -43,6 +43,14 @@
       "id": "4264",
       "email": "sofie@gmail.com",
       "password": "12345"
+    },
+    {
+      "id": "27e5",
+      "email": "sofie@gmail.com",
+      "username": "root",
+      "firstName": "Sofie",
+      "lastName": "Olsen",
+      "password": "123"
     }
   ]
 }
