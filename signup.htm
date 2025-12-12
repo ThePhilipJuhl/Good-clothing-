@@ -56,16 +56,20 @@
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div>
+                    <!--
+                    The most simple approach: 
+                        pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^A-ZA-Za-z0-9]).{8,20}$"
+                    Second version of pattern WITH special characters - we user \ in the end so - and ' works aswell
+                        pattern="^(?=.*?[A-ZA-ZÀ-ÖØ])(?=.*?[a-za-zà-öø-ÿ])(?=.*?[0-9])(?=.*?[§+`#=_~¨?!@$%^&*\-']).{8,20}$"
+                    -->
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" 
-                    pattern="^(?=.*?[A-ZA-ZÀ-ÖØ])(?=.*?[a-za-zà-öø-ÿ])(?=.*?[0-9])(?=.*?[^a-zA-Z0-9]).{8,20}$"
+                    pattern="^(?=.*?[A-ZA-ZÀ-ÖØ])(?=.*?[a-za-zà-öø-ÿ])(?=.*?[0-9])(?=.*?[^A-ZÀ-ÖØa-za-zà-öø-ÿ0-9]).{8,20}$"
                     required>
                 </div>
                 <div>
                     <label for="repeatPassword">Repeat password</label>
-                    <input type="password" id="repeatPassword" name="repeatPassword"
-                    pattern="^(?=.*?[A-ZA-ZÀ-ÖØ])(?=.*?[a-za-zà-öø-ÿ])(?=.*?[0-9])(?=.*?[^a-zA-Z0-9]).{8,20}$"
-                    required>
+                    <input type="password" id="repeatPassword" name="repeatPassword" required>
                 </div>
                 <div>
                     <button class="button-full" type="submit">Sign up here</button>
