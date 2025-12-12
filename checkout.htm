@@ -50,27 +50,27 @@
                     <legend>Shipping address</legend>
                     <div>
                         <label for="ship-firstName">First Name</label>
-                        <input type="text" id="ship-firstName" name="ship-firstName" pattern="^[A-Za-z]{2,40}$" required>
+                        <input type="text" id="ship-firstName" name="ship-firstName" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ0-9._'-]{2,40}$" required>
                     </div>
                     <div>
                         <label for="ship-lastName">Last Name</label>
-                        <input type="text" id="ship-lastName" name="ship-lastName" pattern="^[A-Za-z]{2,40}$" required>
+                        <input type="text" id="ship-lastName" name="ship-lastName" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ0-9._'-]{2,40}$" required>
                     </div>
                     <div>
                         <label for="ship-address">Address</label>
-                        <input type="text" id="ship-address" name="ship-address" pattern="^[A-Za-z0-9\s.,/\-]{2,100}$" required>
+                        <input type="text" id="ship-address" name="ship-address" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ0-9\s.,/\-]{2,100}$" required>
                     </div>
                     <div>
                         <label for="ship-address2">Address line 2 (optional)</label>
-                        <input type="text" id="ship-address2" name="ship-address2" pattern="^[A-Za-z0-9\s.,/\-]{2,100}$">
+                        <input type="text" id="ship-address2" name="ship-address2" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ0-9\s.,/\-]{2,100}$">
                     </div>
                     <div>
                         <label for="ship-city">City</label>
-                        <input type="text" id="ship-city" name="ship-city" pattern="^[A-Za-z\s.'\-]{2,100}$" required>
+                        <input type="text" id="ship-city" name="ship-city" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ0-9\s.'\-]{2,100}$" required>
                     </div>
                     <div>
                         <label for="ship-postal">Postal code</label>
-                        <input type="text" id="ship-postal" name="ship-postal" pattern="^[A-Za-z0-9\s\-]{2,100}$" required>
+                        <input type="text" id="ship-postal" name="ship-postal" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ0-9\s\-]{2,100}$" required>
                     </div>
                     <div>
                         <label for="ship-region">Country</label>
@@ -94,23 +94,23 @@
                     </div>
                     <div>
                         <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" name="firstName" pattern="^[A-Za-z]{2,40}$" required>
+                        <input type="text" id="firstName" name="firstName" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ0-9._'-]{2,40}$" required>
                     </div>
                     <div>
                         <label for="lastName">Last name</label>
-                        <input type="text" id="lastName" name="lastName" pattern="^[A-Za-z]{2,40}$" required>
+                        <input type="text" id="lastName" name="lastName" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ0-9._'-]{2,40}$" required>
                     </div>
                     <div>
                         <label for="address">Address</label>
-                        <input type="text" id="address" name="address" pattern="^[A-Za-z0-9\s.,/\-]{2,100}$" required>
+                        <input type="text" id="address" name="address" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ0-9\s.,/\-]{2,100}$" required>
                     </div>
                     <div>
                         <label for="city">City</label>
-                        <input type="text" id="city" name="city" pattern="^[A-Za-z\s.'\-]{2,100}$" required>
+                        <input type="text" id="city" name="city" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ0-9\s.'\-]{2,100}$" required>
                     </div>
                     <div>
                         <label for="postalCode">Postal code</label>
-                        <input type="text" id="postalCode" name="postalCode" pattern="^[A-Za-z0-9\s\-]{2,100}$" required>
+                        <input type="text" id="postalCode" name="postalCode" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ0-9\s\-]{2,100}$" required>
                     </div>
                 </fieldset>
     
@@ -119,12 +119,12 @@
                     <legend>Credit card information</legend>
                     <div>
                         <label for="card-number">Card number</label>
-                        <input type="text" name="card-number" id="card-number" maxlength="19" pattern="[0-9\s]{13,19}">
+                        <input type="text" name="card-number" id="card-number" maxlength="19" pattern="[0-9\s]{13,19}" required>
                     </div>
                     <div class="month-year">
                         <div>
                             <label for="card-month">Month</label>
-                            <select id="card-month" name="card-month">
+                            <select id="card-month" name="card-month" required>
                                 <option value="">Select month</option>
                                 <option value="01">January</option>
                                 <option value="02">February</option>
@@ -142,12 +142,12 @@
                         </div>
                         <div>
                             <label for="card-year">Year</label>
-                            <input type="text" name="card-year" id="card-year">
+                            <input type="text" name="card-year" id="card-year" pattern="[0-9]{4}" required>
                         </div>
                     </div>
                     <div>
                         <label for="card-cvv">CVV</label>
-                        <input type="text" name="card-cvv" id="card-cvv">
+                        <input type="text" name="card-cvv" id="card-cvv"  pattern="[0-9]{3}" required>
                     </div>
                 </fieldset>
             </form>
@@ -167,6 +167,7 @@
     </footer>
 
     <dialog id="modal">
+        <button class="close">&times;</button>
         <header>
             <h3></h3>
         </header>

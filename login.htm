@@ -57,7 +57,7 @@
                 </div>
                 <div>
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password" pattern="^[\S]{6,255}$" required>
+                    <input type="password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!?%&])[A-Za-zÀ-ÖØ-öø-ÿ0-9!?%&]{8,20}$" required>
                 </div>
                 <div>
                     <button class="button-full" type="submit">Login</button>

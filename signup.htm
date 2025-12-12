@@ -57,15 +57,15 @@
                 </div>
                 <div>
                     <label for="username">Username</label>
-                    <input type="text" id="username" name="username" pattern="^[A-Za-z0-9]{2,40}$" required>
+                    <input type="text" id="username" name="username" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ0-9._'-]{2,40}$" required>
                 </div>
                 <div>
                     <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName" pattern="^[A-Za-z]{2,40}$" required>
+                    <input type="text" id="firstName" name="firstName" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ'-]{2,40}$" required>
                 </div>
                 <div>
                     <label for="lastName">Last name</label>
-                    <input type="text" id="lastName" name="lastName" pattern="^[A-Za-z]{2,40}$" required>
+                    <input type="text" id="lastName" name="lastName" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ'-]{2,40}$" required>
                 </div>
                 <div>
                     <label for="password">Password</label>
@@ -73,12 +73,12 @@
                         ?= -> look around
                         .* -> search the entire input for [content inside here]
                         {x,x} min / max characters
-                         pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@_.#%&/()=+-]).{8,20}$" 
                       -->
                     <input 
                         type="password" 
                         id="password" 
                         name="password" 
+                        pattern="^(?=.*[a-zà-öø-ÿ])(?=.*[A-ZÀ-ÖØ])(?=.*[0-9])(?=.*[!#€%&/()=?`^*_-.,$§]).{8,20}$"
                         required>
                 </div>
                 <div>
@@ -87,6 +87,7 @@
                         type="password" 
                         id="repeatPassword" 
                         name="repeatPassword" 
+                        pattern="^(?=.*[a-zà-öø-ÿ])(?=.*[A-ZÀ-ÖØ])(?=.*[0-9])(?=.*[!#€%&/()=?`^*_-.,$§]).{8,20}$"
                         required>
                 </div>
                 <div>
@@ -109,6 +110,7 @@
     </footer>
 
     <dialog id="modal">
+        <button class="close">&times;</button>
         <header>
             <h3></h3>
         </header>

@@ -51,6 +51,30 @@
       "firstName": "Sofie",
       "lastName": "Olsen",
       "password": "123"
+    },
+    {
+      "id": "ec7d",
+      "email": "a@gmail.com",
+      "username": "sofie",
+      "firstName": "sofie",
+      "lastName": "olsen",
+      "password": "!12345678?abB"
+    },
+    {
+      "id": "4024",
+      "email": "a@agmaik.com",
+      "username": "fjewfkljfkelk",
+      "firstName": "æøæøïö",
+      "lastName": "ïïffeøæø",
+      "password": "12345"
+    },
+    {
+      "id": "949b",
+      "email": "s@gmail.com",
+      "username": "sofie",
+      "firstName": "sofie",
+      "lastName": "olsen",
+      "password": "gr3at@3wdsG"
     }
   ]
 }
