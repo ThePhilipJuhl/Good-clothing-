@@ -57,25 +57,24 @@
                 </div>
                 <div>
                     <label for="username">Username</label>
-                    <input type="text" id="username" name="username" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ0-9._'-]{2,40}$" required>
+                    <input type="text" id="username" name="username" required>
                 </div>
                 <div>
                     <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ'-]{2,40}$" required>
+                    <input type="text" id="firstName" name="firstName" required>
                 </div>
                 <div>
                     <label for="lastName">Last name</label>
-                    <input type="text" id="lastName" name="lastName" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ'-]{2,40}$" required>
+                    <input type="text" id="lastName" name="lastName" required>
                 </div>
                 <div>
                     <label for="password">Password</label>
                     <!-- OLD PATTERN DOES NOT WORK FOR DANISH CHARACTERS WHY WHY HYWH YW -->
-                    <!-- <input type="password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!?%&])[A-Za-zÀ-ÖØ-öø-ÿ0-9!?%&]{8,20}$" required> -->d
+                    <!-- <input type="password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!?%&])[A-Za-zÀ-ÖØ-öø-ÿ0-9!?%&]{8,20}$" required> -->
                     <input 
                         type="password" 
                         id="password" 
                         name="password" 
-                        pattern="^(?=.*[a-zà-öø-ÿæå])(?=.*[A-ZÀ-ÖØÆÅ])(?=.*[0-9])(?=.*[!#€%&/()=?`^*_-.,$§])[A-Za-zÀ-ÖØ-öø-ÿÆÅæå0-9!#€%&/()=?`^*_-.,$§]{8,20}$"
                         required>
                 </div>
                 <div>
@@ -86,7 +85,6 @@
                         type="password" 
                         id="repeatPassword" 
                         name="repeatPassword" 
-                        pattern="^(?=.*[a-zà-öø-ÿæå])(?=.*[A-ZÀ-ÖØÆÅ])(?=.*[0-9])(?=.*[!#€%&/()=?`^*_-.,$§])[A-Za-zÀ-ÖØ-öø-ÿÆÅæå0-9!#€%&/()=?`^*_-.,$§]{8,20}$"
                         required>
                 </div>
                 <div>
