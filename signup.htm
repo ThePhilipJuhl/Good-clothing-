@@ -56,36 +56,16 @@
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div>
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username" required>
-                </div>
-                <div>
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName" required>
-                </div>
-                <div>
-                    <label for="lastName">Last name</label>
-                    <input type="text" id="lastName" name="lastName" required>
-                </div>
-                <div>
                     <label for="password">Password</label>
-                    <!-- OLD PATTERN DOES NOT WORK FOR DANISH CHARACTERS WHY WHY HYWH YW -->
-                    <!-- <input type="password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!?%&])[A-Za-zÀ-ÖØ-öø-ÿ0-9!?%&]{8,20}$" required> -->
-                    <input 
-                        type="password" 
-                        id="password" 
-                        name="password" 
-                        required>
+                    <input type="password" id="password" name="password" 
+                    pattern="^(?=.*?[A-ZA-ZÀ-ÖØ])(?=.*?[a-za-zà-öø-ÿ])(?=.*?[0-9])(?=.*?[#?!@$%^&*]).{8,20}$"
+                    required>
                 </div>
                 <div>
                     <label for="repeatPassword">Repeat password</label>
-                    <!-- OLD PATTERN DOES NOT WORK FOR DANISH CHARACTERS WHY WHY HYWH YW -->
-                    <!-- <input type="password" name="repeatPassword" id="repeatPassword" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!?%&])[A-Za-zÀ-ÖØ-öø-ÿ0-9!?%&]{8,20}$" required> -->
-                    <input 
-                        type="password" 
-                        id="repeatPassword" 
-                        name="repeatPassword" 
-                        required>
+                    <input type="password" id="repeatPassword" name="repeatPassword"
+                    pattern="^(?=.*?[A-ZA-ZÀ-ÖØ])(?=.*?[a-za-zà-öø-ÿ])(?=.*?[0-9])(?=.*?[#?!@$%^&*]).{8,20}$"
+                    required>
                 </div>
                 <div>
                     <button class="button-full" type="submit">Sign up here</button>

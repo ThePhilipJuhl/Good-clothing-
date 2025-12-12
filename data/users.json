@@ -99,6 +99,36 @@
       "firstName": "sæ",
       "lastName": "so",
       "password": "p"
+    },
+    {
+      "id": "7f14",
+      "email": "test@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "6f09",
+      "email": "sofie@gmail.com",
+      "password": "123!Aæ1234"
+    },
+    {
+      "id": "0395",
+      "email": "sofie@gmail.com",
+      "password": "AAAAææææ123!"
+    },
+    {
+      "id": "c558",
+      "email": "a@gmail.com",
+      "password": "ÆØÅæøå1234!"
+    },
+    {
+      "id": "7b91",
+      "email": "a@gmail.com",
+      "password": "ææææææææÆ!1"
+    },
+    {
+      "id": "c121",
+      "email": "sofie@gmail.com",
+      "password": "zzzzzzzzABC123!"
     }
   ]
 }
