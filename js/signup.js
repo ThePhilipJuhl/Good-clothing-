@@ -5,6 +5,9 @@ document.querySelector('#frmSignup').addEventListener('submit', (e) => {
     e.preventDefault();
 
     const email = e.target.email.value.trim();
+    const username = e.target.username.value.trim();
+    const firstName = e.target.firstName.value.trim();
+    const lastName = e.target.lastName.value.trim();
     const password = e.target.password.value.trim();
     const repeatPassword = e.target.repeatPassword.value.trim();
 
@@ -15,6 +18,9 @@ document.querySelector('#frmSignup').addEventListener('submit', (e) => {
     
     const newUser = {
         email: email,
+        username: username,
+        firstName: firstName,
+        lastName: lastName,
         password: password
     }
 
