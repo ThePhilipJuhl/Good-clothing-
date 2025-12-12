@@ -57,6 +57,8 @@
                 </div>
                 <div>
                     <label for="password">Password</label>
+                    <!-- OLD PATTERN DOES NOT WORK FOR DANISH CHARACTERS WHY WHY HYWH YW -->
+                    <!-- <input type="password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!?%&])[A-Za-zÀ-ÖØ-öø-ÿ0-9!?%&]{8,20}$" required> -->
                     <input type="password" name="password" id="password" pattern="^(?=.*[a-zæåø])(?=.*[A-ZÆÅØ])(?=.*\d)(?=.*[!?%&])[A-Za-zÀ-ÖØ-öø-ÿÆÅæå0-9!?%&]{8,20}$" required>
                 </div>
                 <div>

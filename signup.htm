@@ -69,11 +69,8 @@
                 </div>
                 <div>
                     <label for="password">Password</label>
-                     <!-- 
-                        ?= -> look around
-                        .* -> search the entire input for [content inside here]
-                        {x,x} min / max characters
-                      -->
+                    <!-- OLD PATTERN DOES NOT WORK FOR DANISH CHARACTERS WHY WHY HYWH YW -->
+                    <!-- <input type="password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!?%&])[A-Za-zÀ-ÖØ-öø-ÿ0-9!?%&]{8,20}$" required> -->d
                     <input 
                         type="password" 
                         id="password" 
@@ -83,6 +80,8 @@
                 </div>
                 <div>
                     <label for="repeatPassword">Repeat password</label>
+                                        <!-- OLD PATTERN DOES NOT WORK FOR DANISH CHARACTERS WHY WHY HYWH YW -->
+                    <!-- <input type="password" name="repeatPassword" id="repeatPassword" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!?%&])[A-Za-zÀ-ÖØ-öø-ÿ0-9!?%&]{8,20}$" required> -->
                     <input 
                         type="password" 
                         id="repeatPassword" 
