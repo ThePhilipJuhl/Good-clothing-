@@ -37,42 +37,75 @@
 
     <main>
         <section class="hero-section">
-            <div class="hero-image-container">
-                <img id="heroImage" src="#" alt="Hero image">
-            </div>
+            <picture class="hero-image-container">
+                <!-- Large screens -->
+                <source srcset="img/header-large.jpg" media="(min-width: 1024px)">
+
+                <!-- Laptop screens -->
+                <!-- <source srcset="img/header-1024.jpg" media="(min-width: 1024px)"> -->
+                    
+                <!-- Tablet screens -->
+                <source srcset="img/header-768.jpg" media="(min-width: 768px)">
+                    
+                <!-- Default / small screens -->
+                <img src="img/header-468.jpg" loading="lazy" alt="Fashion clothes picture">
+            </picture>
             <div class="hero-content">
-                <h1 class="hero-title">30% off all products</h1>
-                <p class="hero-subtitle">We offer this product</p>
-                <p class="hero-subtitle">you need</p>
-                <p class="hero-cta-text">Look at our latest releases</p>
-                <div class="hero-buttons">
-                    <button class="btn-primary">Shop Now</button>
-                    <button class="btn-secondary">View Products</button>
+                <header>
+                    <h1 class="hero-title">30% off all products</h1>
+                </header>
+                <p class="hero-subtitle">Get all the latest products now before it gets sold out! Sign up for extra perks</p>
+                <div class="button-container">
+                    <a href="products.htm" class="button-full">Shop now</a>
+                    <a href="signup.htm" class="button-empty">Signup</a>
                 </div>
             </div>
         </section>
 
         <section class="member-section">
-            <div class="member-image-container">
-                <img id="memberImage" src="#" alt="Member promotion image">
-            </div>
+            <picture class="member-image-container">
+                <!-- large screens -->
+                <source srcset="img/member-1920.jpg" media="(min-width: 1920)">
+
+                <!-- laptop screens -->
+                <source srcset="img/member-1024.jpg" media="(min-width: 1024)">
+
+                 <!-- Tablet screens -->
+                 <source srcset="img/member-640.jpg" media="(min-width: 640px)">
+                     
+                 <!-- Default / small screens -->
+                 <img src="img/member-350.jpg" loading="lazy" alt="Fashion clothes picture">
+            </picture>
             <div class="member-content">
-                <h2 class="member-title">Become a member and get 30% off your first order</h2>
+                <header>
+                    <h2 class="member-title">Become a member and get 30% off your first order</h2>
+                </header>
                 <p class="member-subtitle">or login and get the usual member perks</p>
                 <div class="member-buttons">
-                    <a href="signup.htm" class="btn-primary">Sign Up</a>
-                    <a href="login.htm" class="btn-secondary">Login</a>
+                    <a href="signup.htm" class="button-full">Sign Up</a>
+                    <a href="login.htm" class="button-empty">Login</a>
                 </div>
             </div>
         </section>
 
         <section class="releases-section">
+            <picture class="release-image-container">
+                 <!-- laptop screens -->
+                 <source srcset="img/releases-large.jpg" media="(min-width: 1024px)">
+
+                 <!-- Default / tablet screen -->
+                 <img src="img/releases-768.jpg" loading="lazy" alt="Fashion clothes picture">
+            </picture>
+        
             <div class="releases-content">
-                <h2 class="releases-title">Look at our newest releases</h2>
-                <p class="releases-subtitle">Be one of the first to buy our latest products now.</p>
-                <button class="btn-primary releases-button">View New Releases</button>
+                <header>
+                    <h2>Look at our newest releases</h2>
+                </header>
+                <p>Be one of the first to buy our latest products now.</p>
+                <button class="button-full">Products</button>
             </div>
         </section>
+        
     </main>
     
     <footer>

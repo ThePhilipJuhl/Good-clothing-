@@ -53,6 +53,19 @@ body{
         background-color: var(--color-accent-dark);
     }
 }
+.button-empty {
+    background-color: var(--color-bg-main);
+    border: var(--border-dark);
+    font-family: var(--font-main);
+    font-size: var(--p-size);
+    padding: var(--padding-s) var(--padding-xxl);
+    color: var(--color-text-main);
+
+    &:hover{
+        font-weight: var(--font-weight-thick);
+        background-color: var(--color-bg-accent);
+    }
+}
 
 /* === responsive images === */
 img{

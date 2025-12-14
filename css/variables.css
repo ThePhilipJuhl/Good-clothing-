@@ -61,9 +61,18 @@
     --margin-l: 1.5rem;
     --margin-xl: 2rem;
 
+   /* Image opacity */
+   --img-opacity-xs: 0.60;
+   --img-optacity-s: 0.2;
+   --img-optacity-m: 0.3;
+   --img-optacity-l: 0.4;
+   --img-optacity-xl: 0.5;
+
     /* === border === */
     --border: 1px solid var(--color-border);
     --border-light: 1px solid var(--color-border-light);
+    --border-dark: 1px solid var(--color-accent-night);
+    --border-thick-dark: 3px solid var(--color-accent-night);
 
   /* === border-radius === */
     --border-radius-xs: 0.3rem;   /* 5px  */
@@ -72,8 +81,10 @@
     --border-radius-l: 1.3rem;    /* 20px */
     --border-radius-xl: 1.6rem;   /* 25px */
 
-    --max-width: 2000px;
 
+    /* === widths === */
+    --max-width: 2000px;
+    --full-width: 100%;
 }
 
 
