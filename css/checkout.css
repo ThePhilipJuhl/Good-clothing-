@@ -1,5 +1,8 @@
 @import url('form.css');
 
+:root{
+    --checkout-button-max-width: 420px;
+}
 
 main {
     display: flex;
@@ -22,7 +25,6 @@ main {
         fieldset {
             padding: var(--padding-s);
             border: none;
-            border-bottom: var(--border-light);
             margin-bottom: var(--margin-m);
         
             div {
@@ -46,6 +48,10 @@ main {
                 background-color: var(--color-white);
             }
         }
+    }
+
+    button  {
+        max-width: var(--checkout-button-max-width);
     }
     
     @media (min-width: 770px){
