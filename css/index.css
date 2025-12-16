@@ -167,7 +167,11 @@ main {
         }
     }
 
-    @media (min-width: 600px) {
+    @media (min-width: 477px) {
+        background-color: var(--color-bg-main);
+    }
+
+    @media (min-width: 700px) {
         flex-direction: row;
         align-items: center;
         justify-content: center;

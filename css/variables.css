@@ -85,6 +85,7 @@
     /* === widths === */
     --max-width: 2000px;
     --full-width: 100%;
+    --button-min-width: 200px;
 }
 
 

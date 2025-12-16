@@ -41,12 +41,17 @@ body{
 }
 
 /* === buttons === */
+.button-empty, .button-full {
+    min-width: var(--button-min-width);
+    text-align: center;
+}
+
 .button-full {
     background-color: var(--color-accent-night);
     border: none;
     font-family: var(--font-main);
     font-size: var(--p-size);
-    padding: var(--padding-s) var(--padding-xxl);
+    padding: var(--padding-s) var(--padding-xl);
     color: var(--color-text-light);
 
     &:hover{
@@ -58,7 +63,7 @@ body{
     border: var(--border-dark);
     font-family: var(--font-main);
     font-size: var(--p-size);
-    padding: var(--padding-s) var(--padding-xxl);
+    padding: var(--padding-s) var(--padding-xl);
     color: var(--color-text-main);
 
     &:hover{
