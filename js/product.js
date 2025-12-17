@@ -1,4 +1,5 @@
 import { BASE_URL } from './info.js';
+import { addToCart } from './cart.js';
 
 const showProduct = (product) => {
     document.querySelector('#productNameBreadcrumb').textContent = product.title;
@@ -14,8 +15,7 @@ const showProduct = (product) => {
 
     const btnAddToCart = document.querySelector('#btnAddToCart');
     btnAddToCart.addEventListener('click', () => {
-        console.log('Add to cart clicked for:', product.title);
-        // TODO: Implement add to cart functionality
+        addToCart(product);
     });
 };
 

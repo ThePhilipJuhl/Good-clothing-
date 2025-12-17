@@ -1,4 +1,5 @@
 import { BASE_URL } from './info.js';
+import { addToCart } from './cart.js';
 
 await fetch(`${BASE_URL}`)
         .then(response => response.json())
@@ -22,7 +23,6 @@ await fetch(`${BASE_URL}`)
             const productPrice = productCard.querySelector('.product-price');
             const btnAddCart = productCard.querySelector('.btn-add-cart');
 
-            // Set the link href for all product links
             const productUrl = `product.htm?id=${product.id}`;
             productLinks.forEach(link => {
                 link.href = productUrl;
@@ -36,7 +36,7 @@ await fetch(`${BASE_URL}`)
 
             btnAddCart.addEventListener('click', (e) => {
                 e.preventDefault();
-                console.log('Add to cart clicked for:', product.title);
+                addToCart(product);
             });
 
             productsGrid.appendChild(productCard);

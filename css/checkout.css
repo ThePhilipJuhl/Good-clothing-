@@ -18,7 +18,16 @@ main {
 
     section#shopping-cart{
         background-color: var(--color-bg-accent);
-        padding: var(--padding-m);
+        padding: var(--padding-m);        
+        .cart-item img {
+            width: 25%;
+        }
+        /* Delete when done cart button */
+        #clear-cart-btn {
+            font-size: 0.875rem;
+            padding: var(--padding-s);
+            margin-top: var(--margin-s);
+        }
     }
     
     form {
