@@ -1,4 +1,5 @@
 import { LOCAL_STORAGE_USER_EMAIL } from './info.js';
+import { showModal } from './modal.js';
 
 // Get the localStorage key for the current user's cart
 function getCartKey() {
@@ -26,6 +27,11 @@ export function addToCart(product) {
     //cart key used to store the cart for the current user
     const cartKey = getCartKey();
     localStorage.setItem(cartKey, JSON.stringify(cart));
+    
+    showModal(
+        'Item Added to Cart',
+        `"${product.title}" has been added to your cart.`
+    );
 }
 
 // Clear the cart for the current user
