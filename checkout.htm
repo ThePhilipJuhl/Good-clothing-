@@ -35,12 +35,21 @@
 
     <main>
         <section id="shopping-cart">
-            <header>
-                <h3>Total price</h3>
-            </header>
-            <p id="total-price">$0.00</p>
-            
         </section>
+        <template id="cartItemTemplate">
+            <div class="cart-item">
+                <div class="cart-item-image">
+                    <img src="#" alt="">
+                </div>
+                <div class="cart-item-details">
+                    <p class="cart-item-category"></p>
+                    <h3 class="cart-item-title"></h3>
+                </div>
+                <div class="cart-item-actions">
+                    <button class="btn-remove-item">remove</button>
+                </div>
+            </div>
+        </template>
         <section id="payment-section">
             <form>
                 <fieldset>

@@ -1,41 +1,54 @@
 import { getCart, clearCart } from './cart.js';
 import { showModal } from './modal.js';
+import { LOCAL_STORAGE_USER_EMAIL } from './info.js';
 
 displayCart();
 setupCheckoutForm();
-setupClearCartButton();
 
 function displayCart() {
     const cart = getCart();
     const cartSection = document.querySelector('#shopping-cart');
+    const cartItemTemplate = document.querySelector('#cartItemTemplate');
     
+    // Clear the cart section first
+    cartSection.innerHTML = '';
+    
+    // if cart is the same as zero return the text 
+    if (cart.length === 0) {
+        cartSection.innerHTML = 'Cart is empty';
+        return;
+    }
 
-    cart.forEach(item => {
-        const cartItem = document.createElement('div');
-        cartItem.className = 'cart-item';
-        cartItem.innerHTML = `
-            <img src="${item.image}" alt="${item.title}">
-            <p>${item.title}</p>
-        `;
+    cart.forEach((item, index) => {
+        const templateContent = cartItemTemplate.content;
+        const cartItem = templateContent.cloneNode(true);
+        
+        const cartItemImg = cartItem.querySelector('img');
+        const cartItemCategory = cartItem.querySelector('.cart-item-category');
+        const cartItemTitle = cartItem.querySelector('.cart-item-title');
+        const btnRemoveItem = cartItem.querySelector('.btn-remove-item');
+        
+        cartItemImg.src = item.image;
+        cartItemImg.alt = item.title;
+        cartItemCategory.textContent = item.category || '';
+        cartItemTitle.textContent = item.title;
+        
+        // Add remove functionality
+        btnRemoveItem.addEventListener('click', () => {
+            removeItemFromCart(index);
+        });
+        
         cartSection.appendChild(cartItem);
     });
 }
-    //Remove the button when done 
-function setupClearCartButton() {
-    const cartSection = document.querySelector('#shopping-cart');
-    let clearButton = cartSection.querySelector('#clear-cart-btn');
-    if (!clearButton) {
-        clearButton = document.createElement('button');
-        clearButton.id = 'clear-cart-btn';
-        clearButton.textContent = 'Clear cart';
-        clearButton.type = 'button';
-        cartSection.appendChild(clearButton);
-    }
-    
-    clearButton.addEventListener('click', () => {
-        clearCart();
-        displayCart();
-    });
+
+function removeItemFromCart(index) {
+    const cart = getCart();
+    cart.splice(index, 1);
+    const userEmail = localStorage.getItem(LOCAL_STORAGE_USER_EMAIL);
+    const cartKey = userEmail ? `cart-${userEmail}` : 'cart-guest';
+    localStorage.setItem(cartKey, JSON.stringify(cart));
+    displayCart();
 }
 
 function setupCheckoutForm() {

@@ -20,7 +20,9 @@ export function addToCart(product) {
     cart.push({
         id: product.id,
         title: product.title,
-        image: product.image
+        image: product.image,
+        category: product.category,
+        price: product.price
     });
     //cart key used to store the cart for the current user
     const cartKey = getCartKey();
