@@ -12,6 +12,7 @@ await fetch(`${BASE_URL}`)
     function displayProducts(products) {
 
         const templateContent = productTemplate.content;
+        const fragment = document.createDocumentFragment();
 
         products.forEach(product => {
             const productCard = templateContent.cloneNode(true);
@@ -39,6 +40,8 @@ await fetch(`${BASE_URL}`)
                 addToCart(product);
             });
 
-            productsGrid.appendChild(productCard);
+            fragment.appendChild(productCard);
         });
+
+        productsGrid.appendChild(fragment);
     }
