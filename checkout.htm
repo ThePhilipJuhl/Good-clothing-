@@ -102,30 +102,30 @@
             
                 <!--Billing address-->
                 <fieldset>
-                    <legend>Billing adress</legend>
+                    <legend>Billing address</legend>
                     <div>
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="billing-email">Email</label>
+                        <input type="email" id="billing-email" name="email" required>
                     </div>
                     <div>
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" name="firstName" pattern="^[A-ZÀ-ÖØa-zà-öø-ÿ \-']{1,60}$" required>
+                        <label for="billing-firstName">First Name</label>
+                        <input type="text" id="billing-firstName" name="billing-firstName" pattern="^[A-ZÀ-ÖØa-zà-öø-ÿ \-']{1,60}$" required>
                     </div>
                     <div>
-                        <label for="lastName">Last name</label>
-                        <input type="text" id="lastName" name="lastName" pattern="^[A-ZÀ-ÖØa-zà-öø-ÿ \-']{1,60}$" required>
+                        <label for="billing-lastName">Last name</label>
+                        <input type="text" id="billing-lastName" name="billing-lastName" pattern="^[A-ZÀ-ÖØa-zà-öø-ÿ \-']{1,60}$" required>
                     </div>
                     <div>
-                        <label for="address">Address</label>
-                        <input type="text" id="address" name="address" pattern="^[0-9A-Za-zÀ-ÖØ-öø-ÿ .,'\-#]{1,100}$" required>
+                        <label for="billing-address">Address</label>
+                        <input type="text" id="billing-address" name="billing-address" pattern="^[0-9A-Za-zÀ-ÖØ-öø-ÿ .,'\-#]{1,100}$" required>
                     </div>
                     <div>
-                        <label for="city">City</label>
-                        <input type="text" id="city" name="city" pattern="^[A-ZÀ-ÖØa-zà-öø-ÿ \-']{1,}$" required>
+                        <label for="billing-city">City</label>
+                        <input type="text" id="billing-city" name="billing-city" pattern="^[A-ZÀ-ÖØa-zà-öø-ÿ \-']{1,}$" required>
                     </div>
                     <div>
-                        <label for="postalCode">Postal code</label>
-                        <input type="text" id="postalCode" name="postalCode" pattern="^[A-Za-z0-9][A-Za-z0-9 \-]{1,}$" required>
+                        <label for="billing-postalCode">Postal code</label>
+                        <input type="text" id="billing-postalCode" name="billing-postalCode" pattern="^[A-Za-z0-9][A-Za-z0-9 \-]{1,}$" required>
                     </div>
                 </fieldset>
     
@@ -134,7 +134,7 @@
                     <legend>Credit card information</legend>
                     <div>
                         <label for="card-number">Card number</label>
-                        <input type="text" name="card-number" id="card-number" pattern="^(\d\s*){13,19}$" required>
+                        <input type="text" inputmode="numeric" name="card-number" id="card-number" pattern="^(\d\s*){13,19}$" required>
                     </div>
                     <div class="month-year">
                         <div>
@@ -157,12 +157,12 @@
                         </div>
                         <div>
                             <label for="card-year">Year</label>
-                            <input type="text" name="card-year" id="card-year" pattern="^\d{4}$" required>
+                            <input type="text" inputmode="numeric" name="card-year" id="card-year" pattern="^\d{4}$" required>
                         </div>
                     </div>
                     <div>
                         <label for="card-cvv">CVV</label>
-                        <input type="text" name="card-cvv" id="card-cvv" pattern="^\d{3}$" required>
+                        <input type="text" inputmode="numeric" name="card-cvv" id="card-cvv" pattern="^\d{3}$" required>
                     </div>
                 </fieldset>
                 <button type="submit" class="button-full">Checkout</button>
