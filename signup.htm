@@ -10,31 +10,28 @@
     <script src="js/signup.js" type="module"></script>
 </head>
 <body>
-    <nav id="utility-menu">
-        <ul id="utility-menu-logged-out">
-            <li id="login"><a href="login.htm">Login</a></li>
-            <li id="signup"><a href="signup.htm">Signup</a></li>
-        </ul>
-    
-        <ul id="utility-menu-logged-in">
-            <li><p id="user"></p></li>
-            <li id="logout"><button id="btnLogout">Log out</button></li>
-        </ul>
-    </nav>
-    <nav id="main-menu">
-        <ul>
-            <li><a href="index.html">
-                <p class="logo">GC</p>
-                <p class="brand-name">Good clothing</p>
-            </a></li>
-            <li><a href="products.htm">Products</a></li>
-        </ul>
-        <ul>
-            <li><a href="checkout.htm">
-                <p class="shoppingcart">Shoppingchart</p><img src="img/shopping-bag.png" alt="cart">
-            </a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav id="utility-menu">
+            <ul id="utility-menu-logged-out" aria-label="User navigation">
+                <li id="login"><a href="login.htm">Login</a></li>
+                <li id="signup"><a href="signup.htm">Signup</a></li>
+            </ul>
+        
+            <ul id="utility-menu-logged-in">
+                <li><span id="user"></span></li>
+                <li id="logout"><button id="btnLogout">Log out</button></li>
+            </ul>
+        </nav>
+        <nav id="main-menu" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html"> <span class="logo">GS</span> <span class="brand-name">Good store</span> </a></li>
+                <li><a href="products.htm">Products</a></li>
+            </ul>
+            <ul>
+                <li><a href="checkout.htm"> <span class="shoppingcart">Shoppingcart</span><img src="img/shopping-bag.png" alt="cart"></a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
         <section>
@@ -78,22 +75,21 @@
         </section>
     </main>
     
+
     <footer>
-        <div class="footer-content">
-            <ul>
-                <li><a class="footer-logo" href="index.html">Logo</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="login.htm">Login</a></li>
-                <li><a href="signup.htm">Signup</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><a class="footer-logo" href="index.html">Good store</a></li>
+            <li><a href="products.htm">Products</a></li>
+            <li><a href="login.htm">Login</a></li>
+            <li><a href="signup.htm">Signup</a></li>
+        </ul>
         <p>&copy; 2025 Good Clothing</p>
     </footer>
 
     <dialog id="modal">
-        <button class="close">&times;</button>
         <header>
             <h3></h3>
+            <button class="close">&times;</button>
         </header>
         <p></p>
     </dialog>
