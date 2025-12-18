@@ -2,6 +2,7 @@
 
 :root{
     --checkout-button-max-width: 420px;
+    --cart-item-image-size: 120px;
 }
 
 main {
@@ -30,9 +31,9 @@ main {
             padding: var(--padding-m);
             
             .cart-item-image {
-                width: 120px;
-                height: 120px;
-                min-width: 120px;
+                width: var(--cart-item-image-size);
+                height: var(--cart-item-image-size);
+                min-width: var(--cart-item-image-size);
                 background-color: var(--color-bg-accent);
                 display: flex;
                 align-items: center;
