@@ -10,6 +10,3 @@ export const showModal = (header, text) => {
         modal.close();
     });
 }
-
-// this is styled in styles.css 
-// Maybe if we use modals alot I'll make a seperate stylesheet for this 

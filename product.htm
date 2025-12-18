@@ -41,17 +41,34 @@
         <a href="products.htm" class="back-link">&lt; back to products</a>
 
         <section class="product-detail">
-            <div class="product-image-container">
+
+            <picture>
                 <img id="productImage" src="#" alt="Product image" class="product-image">
-            </div>
-            <div class="product-info">
+            </picture>
+
+            <section class="product-info">
                 <p class="product-category" id="productCategory"></p>
-                <h1 class="product-title" id="productTitle"></h1>
+
+                <header>
+                    <h2 class="product-title" id="productTitle"></h2>
+                </header>
+
                 <p class="product-price" id="productPrice"></p>
-                <h2 class="description-heading">Description</h2>
-                <p class="product-description" id="productDescription"></p>
-                <button class="btn-add-cart-full" id="btnAddToCart">Add to cart</button>
-            </div>
+
+                <div>
+                    <!-- Description for desktop -->
+                    <p class="product-description-desktop productDescription"></p>
+                    
+                    <!-- Description for mobile inside a details element -->
+                    <details>
+                        <summary>Product details</summary>
+                        <p class="product-description-mobile productDescription"></p>
+                    </details>
+                </div>
+
+                <button class="button-full" id="btnAddToCart">Add to cart</button>
+            </section>
+
         </section>
     </main>
     

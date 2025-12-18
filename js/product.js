@@ -11,7 +11,12 @@ const showProduct = (product) => {
     document.querySelector('#productCategory').textContent = product.category;
     document.querySelector('#productTitle').textContent = product.title;
     document.querySelector('#productPrice').textContent = `$${product.price.toFixed(2)}`;
-    document.querySelector('#productDescription').textContent = product.description;
+   
+    // Update all descriptions
+    const descriptions = document.querySelectorAll('.productDescription');
+    descriptions.forEach(desc => {
+        desc.textContent = product.description;
+    });
 
     const btnAddToCart = document.querySelector('#btnAddToCart');
     btnAddToCart.addEventListener('click', () => {

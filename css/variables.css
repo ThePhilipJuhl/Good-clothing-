@@ -38,6 +38,11 @@
     --font-weight-medium: 500;
     --font-weight-thick: 600;
     --font-weight-bold: 800;
+
+    /* === line heights === */
+    --line-height-s: 1;
+    --line-height-m: 1.3;
+    --line-height-l: 1.6;
     
     /* === gap === */
     --gap-xs: 0.25rem;
@@ -81,11 +86,13 @@
     --border-radius-l: 1.3rem;    /* 20px */
     --border-radius-xl: 1.6rem;   /* 25px */
 
-
     /* === widths === */
     --max-width: 2000px;
+    --max-width-s: 1400px;
     --full-width: 100%;
     --button-min-width: 200px;
+    --button-max-width: 300px;
+    --icon-width: 25px;
 }
 
 

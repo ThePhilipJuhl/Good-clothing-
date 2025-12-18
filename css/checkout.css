@@ -3,6 +3,8 @@
 :root{
     --checkout-button-max-width: 420px;
     --cart-item-image-size: 120px;
+    --item-title-max-width: 300px;
+    --item-title-min-width: 200px;
 }
 
 main {
@@ -23,6 +25,12 @@ main {
         display: flex;
         flex-direction: column;
         gap: var(--gap-m);
+
+        h2 {
+            font-size: var(--p-m-size);
+            font-family: var(--font-main);
+            font-weight: var(--font-weight-thick);
+        }
         
         .cart-item {
             display: flex;
@@ -30,7 +38,13 @@ main {
             align-items: flex-start;
             gap: var(--gap-m);
             padding: var(--padding-m);
-            
+            border-bottom: var(--border-light);
+
+            .cart-item-title {
+                max-width: var(--item-title-max-width);
+                min-width: var(--item-title-min-width);
+            }
+
             .cart-item-image {
                 width: 100%;
                 height: var(--cart-item-image-size);

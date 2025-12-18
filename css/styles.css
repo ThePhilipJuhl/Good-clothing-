@@ -7,6 +7,7 @@
 
 body{
     background-color: var(--color-bg-main);
+    font-family: var(--font-main);
 }
 
 
@@ -34,10 +35,6 @@ a {
     font-size: var(--p-size);
     color: var(--color-text-main);
     text-decoration: none;
-}
-
-body{
-    font-family: var(--font-main);
 }
 
 /* === buttons === */
@@ -87,17 +84,25 @@ img{
     border: none;
     border-radius: var(--border-radius-s);
     margin: var(--margin-m);
-    margin: auto;
+    margin: var(--margin-xl) auto 0 auto; 
+
 
     header {
         display: flex;
         justify-content: space-between;
-        gap: var(--gap-xl);
+        align-items: center;
+        margin-bottom: var(--margin-m);
     }
 
     .close {
         padding: var(--padding-xs);
         margin-bottom: var(--margin-m);
+        font-size: var(--h3-size);
+        color: var(--color-text-medium);
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
     }
 }
 
@@ -130,8 +135,8 @@ nav#main-menu{
         }
 
         li img {
-            width: 25px;
-            height: 25px;
+            width: var(--icon-width);
+            height: var(--icon-width);
             margin-bottom: var(--margin-xs);
         }
 
@@ -144,7 +149,6 @@ nav#main-menu{
             align-items: center;
             flex-wrap: wrap;
             padding: var(--padding-s) var(--padding-m);
-            /* background-color: red; */
         }
     }
 
@@ -175,8 +179,6 @@ nav#utility-menu{
         padding: var(--padding-s) var(--padding-xl);
         background-color: var(--color-bg-main);
         border-radius: var(--border-radius-xl);
-        /* background-color: red; */
-    
     }
 
     ul {
@@ -219,7 +221,6 @@ footer {
             font-family: var(--font-main);
             font-size: var(--p-size);
             padding: var(--padding-s) var(--padding-m);
-            /* background-color: red; */
         
             &:hover {
                 color: var(--color-link-hover);
