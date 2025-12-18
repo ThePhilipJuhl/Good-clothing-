@@ -84,11 +84,16 @@ img{
 /* === modal === */
 #modal{
     padding: var(--padding-xl);
-    text-align: center;
     border: none;
     border-radius: var(--border-radius-s);
     margin: var(--margin-m);
     margin: auto;
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        gap: var(--gap-xl);
+    }
 
     .close {
         padding: var(--padding-xs);

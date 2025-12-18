@@ -29,7 +29,7 @@ document.querySelector('#frmSignup').addEventListener('submit', (e) => {
         e.target.reset()
     })
     .catch(error => {
-        showModal('Error', 'Somethign went wrong')
+        showModal('Error', 'Something went wrong')
         console.log(error);
     })
 
