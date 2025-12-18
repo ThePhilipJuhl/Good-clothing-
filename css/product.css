@@ -5,6 +5,10 @@
     font-family: var(--font-main);
     font-size: var(--p-size);
     color: var(--color-text-main);
+    max-width: var(--max-width);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 
     a {
         color: var(--color-text-main);
@@ -41,6 +45,7 @@
     padding: var(--padding-m) var(--padding-s);
     max-width: var(--max-width-s);
     margin: 0 auto;
+    
 
     picture {
         aspect-ratio: 1;

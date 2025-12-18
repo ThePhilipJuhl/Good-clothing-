@@ -118,6 +118,8 @@ nav#main-menu{
     padding: var(--padding-s);
     border-bottom: var(--border-light);
     margin-bottom: var(--margin-m);
+    max-width: var(--max-width);
+    margin: auto;
 
     /* hiding the logo name and shopping cart text*/
     .brand-name, .shoppingcart { 
@@ -182,6 +184,8 @@ nav#utility-menu{
     justify-content: right;
     align-items: center;
     padding: var(--padding-m);
+    max-width: var(--max-width);
+    margin: auto;
     
     background-color: var( --color-bg-accent);
     color: var(--color-text-main);
@@ -230,6 +234,8 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+    max-width: var(--max-width);
+    margin: auto;
 
     ul {
         list-style: none;
