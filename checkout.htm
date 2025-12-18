@@ -35,21 +35,30 @@
 
     <main>
         <section id="shopping-cart">
+            <header>
+                <h2>Shoppingcart</h2>
+            </header>
+
+            <section id="cart-items">
+                
+            </section>
+
+            <template id="cartItemTemplate">
+                <article class="cart-item">
+                    <picture class="cart-item-image">
+                        <img src="#" alt="">
+                    </picture>
+                    <div class="cart-item-details">
+                        <p class="cart-item-category"></p>
+                        <h3 class="cart-item-title"></h3>
+                    </div>
+                    <div class="cart-item-actions">
+                        <button class="btn-remove-item">remove</button>
+                    </div>
+                </article>
+            </template>
         </section>
-        <template id="cartItemTemplate">
-            <div class="cart-item">
-                <div class="cart-item-image">
-                    <img src="#" alt="">
-                </div>
-                <div class="cart-item-details">
-                    <p class="cart-item-category"></p>
-                    <h3 class="cart-item-title"></h3>
-                </div>
-                <div class="cart-item-actions">
-                    <button class="btn-remove-item">remove</button>
-                </div>
-            </div>
-        </template>
+
         <section id="payment-section">
             <form>
                 <fieldset>

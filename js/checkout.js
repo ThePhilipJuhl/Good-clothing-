@@ -7,40 +7,44 @@ setupCheckoutForm();
 
 function displayCart() {
     const cart = getCart();
-    const cartSection = document.querySelector('#shopping-cart');
+    const cartItems = document.querySelector('#cart-items');
     const cartItemTemplate = document.querySelector('#cartItemTemplate');
     
-    // Clear the cart section first
-    cartSection.innerHTML = '';
-    
-    // if cart is the same as zero return the text 
+    // create the docuemnt fragment so we only append once to the dom
+    const fragment = document.createDocumentFragment();
+
     if (cart.length === 0) {
-        cartSection.innerHTML = 'Cart is empty';
-        return;
+        // create <p> dynamically so its semantically correct
+        const emptyMessage = document.createElement('p');
+        emptyMessage.textContent = 'Your cart is empty.';
+        fragment.appendChild(emptyMessage);
+    } else {
+        cart.forEach((item, index) => {
+            const cartItem = cartItemTemplate.content.cloneNode(true);
+
+            const cartItemImg = cartItem.querySelector('img');
+            const cartItemCategory = cartItem.querySelector('.cart-item-category');
+            const cartItemTitle = cartItem.querySelector('.cart-item-title');
+            const btnRemoveItem = cartItem.querySelector('.btn-remove-item');
+
+            cartItemImg.src = item.image;
+            cartItemImg.alt = item.title;
+            cartItemCategory.textContent = item.category || '';
+            cartItemTitle.textContent = item.title;
+
+            btnRemoveItem.addEventListener('click', () => {
+                removeItemFromCart(index);
+            });
+
+            // append it to the fragment
+            fragment.appendChild(cartItem);
+        });
     }
 
-    cart.forEach((item, index) => {
-        const templateContent = cartItemTemplate.content;
-        const cartItem = templateContent.cloneNode(true);
-        
-        const cartItemImg = cartItem.querySelector('img');
-        const cartItemCategory = cartItem.querySelector('.cart-item-category');
-        const cartItemTitle = cartItem.querySelector('.cart-item-title');
-        const btnRemoveItem = cartItem.querySelector('.btn-remove-item');
-        
-        cartItemImg.src = item.image;
-        cartItemImg.alt = item.title;
-        cartItemCategory.textContent = item.category || '';
-        cartItemTitle.textContent = item.title;
-        
-        // Add remove functionality
-        btnRemoveItem.addEventListener('click', () => {
-            removeItemFromCart(index);
-        });
-        
-        cartSection.appendChild(cartItem);
-    });
+    // Append it to the dom only
+    cartItems.replaceChildren(fragment);
 }
+
 
 function removeItemFromCart(index) {
     const cart = getCart();
