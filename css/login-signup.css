@@ -33,6 +33,10 @@ section{
 
     form {
         width: var(--form-min-width);
+/* 
+        h2 {
+            font-size: var(--h3-size);
+        } */
     }
 
     @media (min-width: 600px){
