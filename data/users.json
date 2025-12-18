@@ -209,6 +209,21 @@
       "id": "a98e",
       "email": "sofie@gmail.com",
       "password": "AAAAææææ123!"
+    },
+    {
+      "id": "62f5",
+      "email": "william@gmail.com",
+      "password": "123ABC!?abc"
+    },
+    {
+      "id": "40ef",
+      "email": "test@gmail.com",
+      "password": "123ABC!?abc"
+    },
+    {
+      "id": "a729",
+      "email": "test@gmail.com",
+      "password": "123ABC!?abc"
     }
   ]
 }
