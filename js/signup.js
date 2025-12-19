@@ -29,13 +29,14 @@ form.addEventListener('submit', async (e) => {
             return; 
         }
 
-        showModal('Success', 'You have signed up successfully!');
+        showModal('Success', 'You have signed up successfully! ');
         form.reset();
     } catch (error) {
         console.error(error);
         showModal('Error', 'Something went wrong. Please try again.');
     }
 });
+
 
 
 
